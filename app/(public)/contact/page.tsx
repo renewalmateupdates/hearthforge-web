@@ -57,7 +57,7 @@ export default async function ContactPage() {
               )}
             </div>
 
-            <div className="mt-12 p-6 rounded-2xl border border-white/8 bg-white/3">
+            <div className="mt-12 p-8 rounded-2xl border border-white/8 bg-white/3">
               <h3 className="font-semibold text-hearthstone mb-2">Custom Orders Welcome</h3>
               <p className="text-hearthstone/50 text-sm leading-relaxed">
                 Have specific dimensions or requirements? We work with customers directly on custom sizes,
