@@ -1,26 +1,61 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --forge-night: #09080A;
+  --forge-char: #3A1000;
+  --forge-red: #B83608;
+  --brand-orange: #D4571A;
+  --amber-spark: #FFC040;
+  --hearthstone: #EDE8E2;
+  --cream: #E4DDD2;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-forge-night: #09080A;
+  --color-forge-char: #3A1000;
+  --color-forge-red: #B83608;
+  --color-brand-orange: #D4571A;
+  --color-amber: #FFC040;
+  --color-hearthstone: #EDE8E2;
+  --color-cream: #E4DDD2;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--forge-night);
+  color: var(--hearthstone);
+}
+
+/* Admin form styles */
+.admin-input {
+  @apply w-full px-3 py-2 rounded-lg border bg-white/5 border-white/10 text-hearthstone placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-colors;
+}
+
+.admin-label {
+  @apply block text-sm font-medium text-hearthstone/70 mb-1.5;
+}
+
+.admin-btn-primary {
+  @apply px-4 py-2 bg-brand-orange hover:bg-amber text-white font-medium rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.admin-btn-secondary {
+  @apply px-4 py-2 bg-white/10 hover:bg-white/20 text-hearthstone font-medium rounded-lg transition-colors;
+}
+
+.admin-btn-danger {
+  @apply px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors;
+}
+
+.admin-card {
+  @apply bg-white/5 border border-white/10 rounded-xl p-6;
 }
