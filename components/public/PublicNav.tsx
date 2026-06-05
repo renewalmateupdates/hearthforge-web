@@ -30,7 +30,7 @@ export default function PublicNav({ items }: Props) {
         </Link>
 
         {/* Center — Desktop nav */}
-        <nav className="hidden md:flex items-center gap-1">
+        <nav>
           {items.map(item => (
             <Link
               key={item.id}
