@@ -21,7 +21,7 @@ export default async function FAQPage() {
     <div className="min-h-screen">
 
       {/* Page header */}
-      <section className="pt-12 md:pt-16 pb-16 border-b border-white/5">
+      <section className="hf-page-header pb-16 border-b border-white/5">
         <div className="hf-section">
           <h1 className="text-5xl md:text-6xl font-bold text-hearthstone mb-4">FAQ</h1>
           <p className="text-hearthstone/50 text-xl">Answers to the most common questions.</p>

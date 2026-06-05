@@ -154,9 +154,9 @@ export default async function HomePage() {
         {/* ─── FEATURES ─── */}
         <section className="py-24 border-t border-white/5">
           <div className="hf-section">
-            <div className="text-center mb-14 max-w-2xl mx-auto">
+            <div className="hf-section-header">
               <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-3">Why Hearthforge</p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone mb-4">Built different. On purpose.</h2>
+              <h2 className="text-2xl font-bold text-hearthstone mb-4">Built different. On purpose.</h2>
               <p className="text-hearthstone/45 text-lg leading-relaxed">
                 Every piece is designed with purpose and printed with precision.
               </p>

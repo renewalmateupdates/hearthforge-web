@@ -81,6 +81,50 @@ body {
   }
 }
 
+/* ── Inner page header — guaranteed top clearance past fixed nav ── */
+.hf-page-header {
+  padding-top: 7rem;    /* 112px — nav(64) + visual space(48) */
+  padding-bottom: 3rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .hf-page-header {
+    padding-top: 9rem;  /* 144px on desktop */
+  }
+}
+
+/* ── Blog empty state — forced center column ── */
+.hf-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.hf-empty-icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  background: rgb(212 87 26 / 0.10);
+  border: 1px solid rgb(212 87 26 / 0.20);
+}
+
+/* ── Section header block — constrained centered text above card grids ── */
+.hf-section-header {
+  text-align: center;
+  max-width: 36rem;  /* 576px — clearly narrower than the 896px card grid */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
 /* Admin form styles */
 .admin-input {
   @apply w-full px-3 py-2 rounded-lg border bg-white/5 border-white/10 text-hearthstone placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-colors;
