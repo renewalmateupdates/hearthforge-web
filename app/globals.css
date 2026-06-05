@@ -125,10 +125,10 @@ body {
   margin-bottom: 3rem;
 }
 
-/* ── Primary CTA button — guaranteed padding so text never touches border ── */
+/* ── Primary CTA button ── */
 .hf-btn-primary {
   display: inline-block;
-  padding: 1rem 3rem;        /* 16px top/bottom, 48px left/right */
+  padding: 0.875rem 2.25rem;  /* comfortable — text has clear breathing room */
   border-radius: 0.75rem;
   background-color: var(--brand-orange);
   color: #fff;
@@ -136,11 +136,35 @@ body {
   font-size: 1rem;
   transition: background-color 0.15s, box-shadow 0.15s, transform 0.15s;
   box-shadow: 0 4px 18px rgb(212 87 26 / 0.25);
+  cursor: pointer;
 }
 .hf-btn-primary:hover {
   background-color: var(--amber-spark);
   box-shadow: 0 4px 22px rgb(212 87 26 / 0.40);
   transform: translateY(-1px);
+}
+
+/* ── Nav Get in Touch button — no display rule (Tailwind hidden/md:flex handles it) ── */
+.hf-nav-btn {
+  align-items: center;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: var(--brand-orange);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 0.15s;
+}
+.hf-nav-btn:hover {
+  background-color: var(--amber-spark);
+}
+
+/* ── Card with generous padding so text never touches the border ── */
+.hf-card {
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(255 255 255 / 0.08);
+  background: rgb(255 255 255 / 0.03);
 }
 
 /* Admin form styles */

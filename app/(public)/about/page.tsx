@@ -80,13 +80,13 @@ export default async function AboutPage() {
       {/* Mission */}
       <section className="py-20 border-t border-white/5">
         <div className="hf-section">
-          <div className="relative rounded-3xl border border-brand-orange/20 bg-brand-orange/5 px-8 py-16 text-center overflow-hidden">
+          <div className="relative rounded-3xl border border-brand-orange/20 bg-brand-orange/5 text-center overflow-hidden" style={{padding:'4rem 3rem'}}>
             <div className="absolute inset-0 pointer-events-none">
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-brand-orange/10 rounded-full blur-[80px]" />
             </div>
-            <div className="relative max-w-2xl mx-auto">
+            <div className="relative" style={{maxWidth:'38rem',marginLeft:'auto',marginRight:'auto'}}>
               <span className="text-xs font-semibold text-brand-orange uppercase tracking-widest mb-4 block">Mission</span>
-              <h2 className="text-3xl md:text-4xl font-bold text-hearthstone mb-5">
+              <h2 className="text-3xl font-bold text-hearthstone mb-5">
                 {mission?.title || 'Our Mission'}
               </h2>
               <p className="text-hearthstone/60 text-xl leading-relaxed">
@@ -106,7 +106,7 @@ export default async function AboutPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {VALUES.map((v, i) => (
-              <div key={i} className="p-9 rounded-2xl border border-white/8 bg-white/3 hover:border-brand-orange/20 transition-all group">
+              <div key={i} className="hf-card hover:border-brand-orange/20 transition-all group">
                 <div className="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center mb-5 group-hover:bg-brand-orange/15 transition-colors">
                   <v.Icon className="w-5 h-5 text-brand-orange" />
                 </div>
@@ -125,9 +125,9 @@ export default async function AboutPage() {
             <h2 className="text-3xl font-bold text-hearthstone mb-3">The Team</h2>
             <p className="text-hearthstone/50">Two founders. One shared obsession with quality.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6" style={{maxWidth:'38rem',marginLeft:'auto',marginRight:'auto'}}>
             {TEAM.map((member, i) => (
-              <div key={i} className="p-8 rounded-2xl border border-white/8 bg-white/3 text-center">
+              <div key={i} className="hf-card text-center">
                 <div className="w-16 h-16 rounded-2xl bg-brand-orange/20 flex items-center justify-center mx-auto mb-5">
                   <span className="text-xl font-bold text-brand-orange">{member.initials}</span>
                 </div>
