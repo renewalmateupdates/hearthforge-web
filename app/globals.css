@@ -69,6 +69,17 @@ body {
     padding-right: 2rem;
   }
 }
+/* Nav links get generous spacing between items */
+.hf-nav nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;  /* 24px between items */
+}
+@media (max-width: 767px) {
+  .hf-nav nav {
+    display: none;
+  }
+}
 
 /* Admin form styles */
 .admin-input {

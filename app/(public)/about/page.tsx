@@ -33,7 +33,7 @@ export default async function AboutPage() {
     <div className="min-h-screen">
 
       {/* Page header */}
-      <section className="pt-12 md:pt-16 pb-20 text-center relative overflow-hidden">
+      <section className="pt-24 md:pt-32 pb-20 text-center relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-brand-orange/6 rounded-full blur-[120px]" />
         </div>
