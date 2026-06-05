@@ -123,30 +123,31 @@ export default async function HomePage() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link href="/products"
-                className="px-8 py-3.5 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold text-base transition-all shadow-lg shadow-brand-orange/25 hover:shadow-brand-orange/40 hover:-translate-y-0.5">
+                className="px-10 py-3.5 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold text-base transition-all shadow-lg shadow-brand-orange/25 hover:shadow-brand-orange/40 hover:-translate-y-0.5">
                 Shop Products
               </Link>
               <Link href="/portfolio"
-                className="px-8 py-3.5 rounded-xl border border-white/12 hover:border-white/25 text-hearthstone font-semibold text-base transition-all hover:bg-white/5">
+                className="px-10 py-3.5 rounded-xl border border-brand-orange/50 bg-brand-orange/10 hover:bg-brand-orange/18 hover:border-brand-orange/70 text-hearthstone font-semibold text-base transition-all">
                 View Portfolio
               </Link>
             </div>
 
             {/* Social proof strip */}
-            <div className="flex items-center justify-center gap-0 mt-14 pt-10 border-t border-white/6 w-full max-w-sm mx-auto">
-              {[
-                { label: 'PLA / PETG', sub: 'Premium materials' },
-                { label: 'Modular', sub: 'Expandable system' },
-                { label: 'USA Built', sub: 'Small batch' },
-              ].map((item, i) => (
-                <>
-                  {i > 0 && <div key={`div-${i}`} className="w-px h-8 bg-white/10 mx-6 shrink-0" />}
-                  <div key={i} className="text-center shrink-0">
-                    <p className="text-sm font-semibold text-hearthstone">{item.label}</p>
-                    <p className="text-xs text-hearthstone/35 mt-0.5">{item.sub}</p>
-                  </div>
-                </>
-              ))}
+            <div className="flex items-center justify-center gap-8 mt-14 pt-10 border-t border-white/6 w-full max-w-xs mx-auto">
+              <div className="text-center shrink-0">
+                <p className="text-sm font-semibold text-hearthstone">PLA / PETG</p>
+                <p className="text-xs text-hearthstone/35 mt-0.5">Premium materials</p>
+              </div>
+              <div className="w-px h-8 bg-white/10 shrink-0" />
+              <div className="text-center shrink-0">
+                <p className="text-sm font-semibold text-hearthstone">Modular</p>
+                <p className="text-xs text-hearthstone/35 mt-0.5">Expandable system</p>
+              </div>
+              <div className="w-px h-8 bg-white/10 shrink-0" />
+              <div className="text-center shrink-0">
+                <p className="text-sm font-semibold text-hearthstone">USA Built</p>
+                <p className="text-xs text-hearthstone/35 mt-0.5">Small batch</p>
+              </div>
             </div>
           </div>
         </section>
