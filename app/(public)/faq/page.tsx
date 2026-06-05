@@ -22,13 +22,13 @@ export default async function FAQPage() {
 
       {/* Page header */}
       <section className="pt-28 md:pt-32 pb-16 border-b border-white/5">
-        <div className="max-w-3xl mx-auto px-6 md:px-10">
+        <div className="max-w-3xl mx-auto px-5 sm:px-8">
           <h1 className="text-5xl md:text-6xl font-bold text-hearthstone mb-4">FAQ</h1>
           <p className="text-hearthstone/50 text-xl">Answers to the most common questions.</p>
         </div>
       </section>
 
-      <div className="max-w-3xl mx-auto px-6 md:px-10 py-16">
+      <div className="max-w-3xl mx-auto px-5 sm:px-8 py-16">
 
       {(!faqs || faqs.length === 0) && (
         <div className="py-24 text-center">

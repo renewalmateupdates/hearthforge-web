@@ -10,17 +10,17 @@ export const metadata = {
 }
 
 const DEFAULT_NAV: NavItem[] = [
-  { id: '1', label: 'Products', url: '/products', order: 0 },
+  { id: '1', label: 'Products',  url: '/products',  order: 0 },
   { id: '2', label: 'Portfolio', url: '/portfolio', order: 1 },
-  { id: '3', label: 'About', url: '/about', order: 2 },
-  { id: '4', label: 'Blog', url: '/blog', order: 3 },
-  { id: '5', label: 'Contact', url: '/contact', order: 4 },
+  { id: '3', label: 'About',     url: '/about',     order: 2 },
+  { id: '4', label: 'Blog',      url: '/blog',      order: 3 },
+  { id: '5', label: 'Contact',   url: '/contact',   order: 4 },
 ]
 
 const DEFAULT_FOOTER: NavItem[] = [
   { id: '1', label: 'Privacy Policy', url: '/privacy', order: 0 },
-  { id: '2', label: 'Terms', url: '/terms', order: 1 },
-  { id: '3', label: 'FAQ', url: '/faq', order: 2 },
+  { id: '2', label: 'Terms',          url: '/terms',   order: 1 },
+  { id: '3', label: 'FAQ',            url: '/faq',     order: 2 },
 ]
 
 const FEATURES = [
@@ -50,6 +50,8 @@ function StarRating({ rating }: { rating: number }) {
     </div>
   )
 }
+
+const cn = 'max-w-7xl mx-auto px-5 sm:px-8'
 
 export default async function HomePage() {
   const supabase = await createClient()
@@ -87,94 +89,113 @@ export default async function HomePage() {
 
       <main className="flex-1 pt-16">
 
-        {/* ── HERO ── */}
-        <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden">
-          {/* Glows */}
+        {/* ─── HERO ─── */}
+        <section className="relative flex items-center justify-center min-h-[94vh] overflow-hidden">
+          {/* Background atmosphere */}
           <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-brand-orange/8 rounded-full blur-[140px]" />
-            <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-amber/4 rounded-full blur-[120px]" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[60%] w-[900px] h-[600px] bg-brand-orange/7 rounded-full blur-[160px]" />
+            <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-amber/4 rounded-full blur-[120px]" />
+            {/* Subtle grid lines */}
+            <div className="absolute inset-0 opacity-[0.015]"
+              style={{ backgroundImage: 'linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
           </div>
 
-          <div className="relative w-full max-w-3xl mx-auto px-6 md:px-10 py-28 text-center">
+          <div className={`relative w-full ${cn} py-32 text-center`}>
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-orange/30 bg-brand-orange/10 text-brand-orange text-xs font-semibold mb-8 tracking-wide">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-orange/25 bg-brand-orange/8 text-brand-orange text-xs font-semibold mb-10 tracking-widest">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
               PRECISION 3D PRINTING FOR CREATORS
             </div>
 
             {/* Headline */}
-            <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold text-hearthstone leading-[1.05] tracking-tight mb-6">
+            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-hearthstone leading-[1.04] tracking-tight mb-7">
               Forged for<br />
               <span className="text-brand-orange">Creators</span>
             </h1>
 
-            {/* Sub */}
-            <p className="text-lg sm:text-xl text-hearthstone/55 max-w-xl mx-auto mb-10 leading-relaxed">
+            {/* Subtitle */}
+            <p className="text-lg sm:text-xl text-hearthstone/50 max-w-lg mx-auto mb-10 leading-relaxed">
               Modular 3D-printed desk accessories built for streamers,
               gamers, and content creators who demand clean setups.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link href="/products"
-                className="px-8 py-4 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold text-base transition-colors shadow-lg shadow-brand-orange/20">
+                className="px-8 py-3.5 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold text-base transition-all shadow-lg shadow-brand-orange/25 hover:shadow-brand-orange/40 hover:-translate-y-0.5">
                 Shop Products
               </Link>
               <Link href="/portfolio"
-                className="px-8 py-4 rounded-xl border border-white/15 hover:border-white/30 text-hearthstone font-semibold text-base transition-colors hover:bg-white/5">
+                className="px-8 py-3.5 rounded-xl border border-white/12 hover:border-white/25 text-hearthstone font-semibold text-base transition-all hover:bg-white/5">
                 View Portfolio
               </Link>
             </div>
-          </div>
-        </section>
 
-        {/* ── FEATURES ── */}
-        <section className="py-20 md:py-28 border-t border-white/5">
-          <div className="max-w-6xl mx-auto px-6 md:px-10">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone mb-4">Why Hearthforge?</h2>
-              <p className="text-hearthstone/50 text-lg max-w-md mx-auto">
-                Every piece is designed with purpose and printed with precision.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {FEATURES.map((f, i) => (
-                <div key={i} className="p-7 rounded-2xl border border-white/8 bg-white/3 hover:border-brand-orange/20 hover:bg-white/5 transition-all">
-                  <div className="text-4xl mb-5">{f.icon}</div>
-                  <h3 className="text-lg font-semibold text-hearthstone mb-3">{f.title}</h3>
-                  <p className="text-hearthstone/50 text-sm leading-relaxed">{f.desc}</p>
+            {/* Social proof strip */}
+            <div className="flex items-center justify-center gap-6 mt-14 pt-10 border-t border-white/6">
+              {[
+                { label: 'PLA / PETG', sub: 'Premium materials' },
+                { label: 'Modular', sub: 'Expandable system' },
+                { label: 'USA Built', sub: 'Small batch' },
+              ].map((item, i) => (
+                <div key={i} className="text-center">
+                  <p className="text-sm font-semibold text-hearthstone">{item.label}</p>
+                  <p className="text-xs text-hearthstone/35 mt-0.5">{item.sub}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* ── FEATURED PRODUCTS (only if data exists) ── */}
+        {/* ─── FEATURES ─── */}
+        <section className="py-24 border-t border-white/5">
+          <div className={cn}>
+            <div className="text-center mb-14">
+              <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-3">Why Hearthforge</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone mb-4">Built different. On purpose.</h2>
+              <p className="text-hearthstone/45 text-lg max-w-md mx-auto leading-relaxed">
+                Every piece is designed with purpose and printed with precision.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              {FEATURES.map((f, i) => (
+                <div key={i} className="relative p-8 rounded-2xl border border-white/8 bg-white/[0.02] hover:border-brand-orange/25 hover:bg-brand-orange/[0.02] transition-all group">
+                  <div className="absolute top-4 right-4 w-1.5 h-1.5 rounded-full bg-brand-orange/30 group-hover:bg-brand-orange/60 transition-colors" />
+                  <div className="text-4xl mb-5">{f.icon}</div>
+                  <h3 className="text-base font-semibold text-hearthstone mb-2.5">{f.title}</h3>
+                  <p className="text-hearthstone/45 text-sm leading-relaxed">{f.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ─── FEATURED PRODUCTS ─── */}
         {(featuredProducts?.length ?? 0) > 0 && (
           <section className="py-24 border-t border-white/5">
-            <div className="max-w-6xl mx-auto px-6 md:px-10">
+            <div className={cn}>
               <div className="flex items-end justify-between mb-10">
                 <div>
-                  <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone">Our Products</h2>
-                  <p className="text-hearthstone/50 mt-2">Modular, minimal, built to last.</p>
+                  <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-2">Products</p>
+                  <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone">Our Lineup</h2>
                 </div>
                 <Link href="/products" className="text-sm text-brand-orange hover:text-amber transition-colors font-medium">
-                  See all →
+                  View all →
                 </Link>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 {(featuredProducts || []).map((p: Product) => (
                   <Link key={p.id} href={`/products/${p.slug}`}
-                    className="group block rounded-2xl border border-white/8 bg-white/3 hover:border-brand-orange/30 hover:bg-white/5 transition-all overflow-hidden">
-                    <div className="aspect-square bg-white/5 overflow-hidden">
+                    className="group block rounded-2xl border border-white/8 bg-white/[0.02] hover:border-brand-orange/25 transition-all overflow-hidden">
+                    <div className="aspect-square bg-white/4 overflow-hidden">
                       {p.image_url
-                        ? <img src={p.image_url} alt={p.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-                        : <div className="w-full h-full flex items-center justify-center text-hearthstone/10 text-6xl">⚙</div>
+                        ? <img src={p.image_url} alt={p.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        : <div className="w-full h-full flex items-center justify-center text-hearthstone/8 text-6xl">⚙</div>
                       }
                     </div>
                     <div className="p-5">
                       <h3 className="font-semibold text-hearthstone group-hover:text-brand-orange transition-colors">{p.name}</h3>
-                      {p.short_description && <p className="text-hearthstone/50 text-sm mt-1 line-clamp-2">{p.short_description}</p>}
+                      {p.short_description && <p className="text-hearthstone/40 text-sm mt-1.5 line-clamp-2">{p.short_description}</p>}
                       <p className="text-amber font-semibold mt-3 text-sm">
                         {p.price_label || (p.price ? `$${p.price}` : 'Contact for pricing')}
                       </p>
@@ -186,29 +207,29 @@ export default async function HomePage() {
           </section>
         )}
 
-        {/* ── PORTFOLIO (only if data exists) ── */}
+        {/* ─── PORTFOLIO PREVIEW ─── */}
         {(portfolioItems?.length ?? 0) > 0 && (
           <section className="py-24 border-t border-white/5">
-            <div className="max-w-6xl mx-auto px-6 md:px-10">
+            <div className={cn}>
               <div className="flex items-end justify-between mb-10">
                 <div>
+                  <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-2">Portfolio</p>
                   <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone">From the Workshop</h2>
-                  <p className="text-hearthstone/50 mt-2">Recent builds and setups.</p>
                 </div>
                 <Link href="/portfolio" className="text-sm text-brand-orange hover:text-amber transition-colors font-medium">
                   See all →
                 </Link>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {(portfolioItems || []).map((item: PortfolioItem) => (
                   <Link key={item.id} href={`/portfolio/${item.slug}`}
-                    className="group relative aspect-square rounded-xl overflow-hidden border border-white/8">
+                    className="group relative aspect-square rounded-2xl overflow-hidden border border-white/8 hover:border-white/18 transition-colors">
                     {item.image_url
-                      ? <img src={item.image_url} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-                      : <div className="w-full h-full bg-white/5" />
+                      ? <img src={item.image_url} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      : <div className="w-full h-full bg-white/4" />
                     }
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                      <p className="text-sm font-medium text-white">{item.title}</p>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                      <p className="text-sm font-semibold text-white">{item.title}</p>
                     </div>
                   </Link>
                 ))}
@@ -217,21 +238,22 @@ export default async function HomePage() {
           </section>
         )}
 
-        {/* ── TESTIMONIALS (only if data exists) ── */}
+        {/* ─── TESTIMONIALS ─── */}
         {(testimonials?.length ?? 0) > 0 && (
           <section className="py-24 border-t border-white/5">
-            <div className="max-w-6xl mx-auto px-6 md:px-10">
+            <div className={cn}>
               <div className="text-center mb-12">
+                <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-3">Reviews</p>
                 <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone">What Creators Say</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {(testimonials || []).map((t: Testimonial) => (
-                  <div key={t.id} className="p-6 rounded-2xl border border-white/8 bg-white/3">
+                  <div key={t.id} className="p-6 rounded-2xl border border-white/8 bg-white/[0.02]">
                     <StarRating rating={t.rating} />
-                    <p className="text-hearthstone/70 text-sm leading-relaxed mt-3 mb-4">&ldquo;{t.content}&rdquo;</p>
+                    <p className="text-hearthstone/65 text-sm leading-relaxed mt-4 mb-5">&ldquo;{t.content}&rdquo;</p>
                     <div>
                       <p className="text-sm font-semibold text-hearthstone">{t.customer_name}</p>
-                      {t.customer_title && <p className="text-xs text-hearthstone/40">{t.customer_title}</p>}
+                      {t.customer_title && <p className="text-xs text-hearthstone/35 mt-0.5">{t.customer_title}</p>}
                     </div>
                   </div>
                 ))}
@@ -240,22 +262,30 @@ export default async function HomePage() {
           </section>
         )}
 
-        {/* ── CTA ── */}
-        <section className="py-20 md:py-28 border-t border-white/5">
-          <div className="max-w-6xl mx-auto px-6 md:px-10">
-            <div className="relative rounded-3xl border border-brand-orange/20 bg-brand-orange/5 px-8 py-20 text-center overflow-hidden">
+        {/* ─── CTA ─── */}
+        <section className="py-28 border-t border-white/5">
+          <div className={cn}>
+            <div className="relative rounded-3xl border border-brand-orange/18 bg-gradient-to-br from-brand-orange/8 via-brand-orange/5 to-transparent px-8 sm:px-14 py-20 text-center overflow-hidden">
+              {/* Glow */}
               <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-orange/10 rounded-full blur-[100px]" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-brand-orange/12 rounded-full blur-[80px]" />
               </div>
+              {/* Corner accents */}
+              <div className="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-brand-orange/25 rounded-tl-lg" />
+              <div className="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-brand-orange/25 rounded-tr-lg" />
+              <div className="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2 border-brand-orange/25 rounded-bl-lg" />
+              <div className="absolute bottom-4 right-4 w-8 h-8 border-b-2 border-r-2 border-brand-orange/25 rounded-br-lg" />
+
               <div className="relative">
+                <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-4">Get Started</p>
                 <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone mb-4">
                   Ready to upgrade your setup?
                 </h2>
-                <p className="text-hearthstone/60 text-lg max-w-xl mx-auto mb-8">
+                <p className="text-hearthstone/50 text-lg max-w-md mx-auto mb-8 leading-relaxed">
                   Get early access to the Hearthforge modular desk rail system.
                 </p>
                 <Link href="/contact"
-                  className="inline-block px-10 py-4 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold text-base transition-colors shadow-lg shadow-brand-orange/25">
+                  className="inline-block px-10 py-4 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold text-base transition-all shadow-lg shadow-brand-orange/25 hover:shadow-brand-orange/40 hover:-translate-y-0.5">
                   Get Early Access
                 </Link>
               </div>
