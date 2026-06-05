@@ -20,7 +20,7 @@ export default async function BlogPage() {
     <div className="min-h-screen">
 
       {/* Page header */}
-      <section className="pt-28 md:pt-32 pb-16 border-b border-white/5">
+      <section className="pt-12 md:pt-16 pb-16 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <h1 className="text-5xl md:text-6xl font-bold text-hearthstone mb-4">Blog</h1>
           <p className="text-hearthstone/50 text-xl">Build updates, tips, and stories from the workshop.</p>
