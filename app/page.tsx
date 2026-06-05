@@ -52,7 +52,7 @@ function StarRating({ rating }: { rating: number }) {
   )
 }
 
-const cn = 'max-w-5xl mx-auto px-5 sm:px-8'
+const cn = 'max-w-4xl mx-auto px-5 sm:px-8'
 
 export default async function HomePage() {
   const supabase = await createClient()
@@ -100,7 +100,7 @@ export default async function HomePage() {
               style={{ backgroundImage: 'linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
           </div>
 
-          <div className={`relative w-full max-w-5xl mx-auto px-5 sm:px-8 py-32 flex flex-col items-center text-center`}>
+          <div className={`relative w-full max-w-4xl mx-auto px-5 sm:px-8 py-32 flex flex-col items-center text-center`}>
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-orange/25 bg-brand-orange/8 text-brand-orange text-xs font-semibold mb-10 tracking-widest">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
@@ -126,8 +126,8 @@ export default async function HomePage() {
                 Shop Products
               </Link>
               <Link href="/portfolio"
-                className="px-10 py-3.5 rounded-xl border border-white/30 text-white/80 font-semibold text-base transition-all hover:border-white/55 hover:bg-white/5 hover:text-white">
-                View Portfolio
+                className="px-4 py-3.5 text-hearthstone/70 font-semibold text-base transition-colors hover:text-hearthstone">
+                View Portfolio →
               </Link>
             </div>
 
@@ -153,7 +153,7 @@ export default async function HomePage() {
 
         {/* ─── FEATURES ─── */}
         <section className="py-24 border-t border-white/5">
-          <div className="max-w-5xl mx-auto px-5 sm:px-8">
+          <div className="max-w-4xl mx-auto px-5 sm:px-8">
             <div className="text-center mb-14 max-w-2xl mx-auto">
               <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-3">Why Hearthforge</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone mb-4">Built different. On purpose.</h2>
@@ -179,7 +179,7 @@ export default async function HomePage() {
         {/* ─── FEATURED PRODUCTS ─── */}
         {(featuredProducts?.length ?? 0) > 0 && (
           <section className="py-24 border-t border-white/5">
-            <div className="max-w-5xl mx-auto px-5 sm:px-8">
+            <div className="max-w-4xl mx-auto px-5 sm:px-8">
               <div className="flex items-end justify-between mb-10">
                 <div>
                   <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-2">Products</p>
@@ -216,7 +216,7 @@ export default async function HomePage() {
         {/* ─── PORTFOLIO PREVIEW ─── */}
         {(portfolioItems?.length ?? 0) > 0 && (
           <section className="py-24 border-t border-white/5">
-            <div className="max-w-5xl mx-auto px-5 sm:px-8">
+            <div className="max-w-4xl mx-auto px-5 sm:px-8">
               <div className="flex items-end justify-between mb-10">
                 <div>
                   <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-2">Portfolio</p>
@@ -247,7 +247,7 @@ export default async function HomePage() {
         {/* ─── TESTIMONIALS ─── */}
         {(testimonials?.length ?? 0) > 0 && (
           <section className="py-24 border-t border-white/5">
-            <div className="max-w-5xl mx-auto px-5 sm:px-8">
+            <div className="max-w-4xl mx-auto px-5 sm:px-8">
               <div className="text-center mb-12">
                 <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-3">Reviews</p>
                 <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone">What Creators Say</h2>
@@ -269,32 +269,24 @@ export default async function HomePage() {
         )}
 
         {/* ─── CTA ─── */}
-        <section className="py-28 border-t border-white/5">
-          <div className="max-w-5xl mx-auto px-5 sm:px-8">
-            <div className="relative rounded-3xl border border-brand-orange/18 bg-gradient-to-br from-brand-orange/8 via-brand-orange/5 to-transparent px-8 sm:px-14 py-20 text-center overflow-hidden">
-              {/* Glow */}
-              <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-brand-orange/12 rounded-full blur-[80px]" />
-              </div>
-              {/* Corner accents */}
-              <div className="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-brand-orange/25 rounded-tl-lg" />
-              <div className="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-brand-orange/25 rounded-tr-lg" />
-              <div className="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2 border-brand-orange/25 rounded-bl-lg" />
-              <div className="absolute bottom-4 right-4 w-8 h-8 border-b-2 border-r-2 border-brand-orange/25 rounded-br-lg" />
-
-              <div className="relative">
-                <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-4">Get Started</p>
-                <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone mb-4">
-                  Ready to upgrade your setup?
-                </h2>
-                <p className="text-hearthstone/50 text-lg max-w-md mx-auto mb-8 leading-relaxed">
-                  Get early access to the Hearthforge modular desk rail system.
-                </p>
-                <Link href="/contact"
-                  className="inline-block px-10 py-4 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold text-base transition-all shadow-lg shadow-brand-orange/25 hover:shadow-brand-orange/40 hover:-translate-y-0.5">
-                  Get Early Access
-                </Link>
-              </div>
+        <section className="py-28 border-t border-white/5 text-center">
+          <div className="max-w-4xl mx-auto px-5 sm:px-8">
+            <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-5">Get Started</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone mb-4">
+              Ready to upgrade your setup?
+            </h2>
+            <p className="text-hearthstone/50 text-lg max-w-md mx-auto mb-10 leading-relaxed">
+              Get early access to the Hearthforge modular desk rail system.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link href="/contact"
+                className="px-10 py-3.5 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold text-base transition-all shadow-lg shadow-brand-orange/25 hover:shadow-brand-orange/40 hover:-translate-y-0.5">
+                Get Early Access
+              </Link>
+              <Link href="/products"
+                className="text-hearthstone/60 font-semibold text-base hover:text-hearthstone transition-colors">
+                Browse products →
+              </Link>
             </div>
           </div>
         </section>
@@ -305,5 +297,6 @@ export default async function HomePage() {
     </div>
   )
 }
+
 
 
