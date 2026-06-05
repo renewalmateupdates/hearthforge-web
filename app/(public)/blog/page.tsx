@@ -20,7 +20,7 @@ export default async function BlogPage() {
     <div className="min-h-screen">
 
       {/* Page header */}
-      <section className="pt-24 md:pt-32 pb-16 border-b border-white/5 text-center">
+      <section className="hf-page-header border-b border-white/5">
         <div className="hf-section">
           <h1 className="text-5xl md:text-6xl font-bold text-hearthstone mb-4">Blog</h1>
           <p className="text-hearthstone/50 text-xl">Build updates, tips, and stories from the workshop.</p>
@@ -28,12 +28,12 @@ export default async function BlogPage() {
       </section>
 
       {(!posts || posts.length === 0) ? (
-        <div className="py-32 text-center">
-          <div className="w-20 h-20 rounded-3xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center mx-auto mb-8">
-            <span className="text-4xl">📝</span>
+        <div className="hf-empty">
+          <div className="hf-empty-icon">
+            <span style={{fontSize: '2rem'}}>📝</span>
           </div>
           <h2 className="text-2xl font-bold text-hearthstone mb-3">Coming From the Workshop</h2>
-          <p className="text-hearthstone/50 text-lg max-w-md mx-auto mb-8 leading-relaxed">
+          <p className="text-hearthstone/50 text-lg mb-8" style={{maxWidth: '28rem'}}>
             We&apos;re working on build logs, setup tips, and stories from the shop. Be the first to know when we publish.
           </p>
           <Link href="/contact"
