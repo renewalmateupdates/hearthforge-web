@@ -35,6 +35,22 @@ body {
   color: var(--hearthstone);
 }
 
+/* ── Centered content column — 896px max, always centered ── */
+.hf-section {
+  width: 100%;
+  max-width: 56rem;   /* 896px */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+@media (min-width: 640px) {
+  .hf-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 /* Admin form styles */
 .admin-input {
   @apply w-full px-3 py-2 rounded-lg border bg-white/5 border-white/10 text-hearthstone placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-colors;

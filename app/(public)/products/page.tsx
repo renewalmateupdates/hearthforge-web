@@ -23,13 +23,13 @@ export default async function ProductsPage() {
 
       {/* Header */}
       <section className="pt-12 md:pt-16 pb-16 border-b border-white/5">
-        <div className="max-w-4xl mx-auto px-5 sm:px-8">
+        <div className="hf-section">
           <h1 className="text-5xl md:text-6xl font-bold text-hearthstone mb-4">Products</h1>
           <p className="text-hearthstone/50 text-xl">Precision-crafted accessories for your setup.</p>
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-5 sm:px-8 py-16">
+      <div className="hf-section py-16">
         {hasProducts ? (
           categories.length > 0 ? (
             <div className="space-y-16">
