@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Plus, Trash2, Save, GripVertical } from 'lucide-react'
 import type { NavigationMenu, NavItem } from '@/types'
-import { v4 as uuidv4 } from 'uuid'
+const uuidv4 = () => crypto.randomUUID()
 
 interface Props {
   menus: NavigationMenu[]
