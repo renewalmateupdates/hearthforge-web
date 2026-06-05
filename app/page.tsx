@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import Link from 'next/link'
+import { Target, Layers, Wrench } from 'lucide-react'
 import PublicNav from '@/components/public/PublicNav'
 import PublicFooter from '@/components/public/PublicFooter'
 import type { NavItem, Product, PortfolioItem, Testimonial } from '@/types'
@@ -25,17 +26,17 @@ const DEFAULT_FOOTER: NavItem[] = [
 
 const FEATURES = [
   {
-    icon: '🎯',
+    Icon: Target,
     title: 'Built for Creators',
     desc: 'Every piece is designed specifically for streamers, gamers, and content creators who demand clean, functional setups.',
   },
   {
-    icon: '⚙️',
+    Icon: Layers,
     title: 'Precision Printed',
     desc: 'Professional-grade printing on premium PLA and PETG. Parts that fit perfectly, feel solid, and last for years.',
   },
   {
-    icon: '🔧',
+    Icon: Wrench,
     title: 'Modular by Design',
     desc: 'Snap together, reconfigure, and expand. Every piece works with every other piece in the Hearthforge system.',
   },
@@ -100,7 +101,7 @@ export default async function HomePage() {
               style={{ backgroundImage: 'linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
           </div>
 
-          <div className={`relative w-full ${cn} py-32 text-center`}>
+          <div className={`relative w-full ${cn} py-32 flex flex-col items-center text-center`}>
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-orange/25 bg-brand-orange/8 text-brand-orange text-xs font-semibold mb-10 tracking-widest">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
@@ -132,16 +133,19 @@ export default async function HomePage() {
             </div>
 
             {/* Social proof strip */}
-            <div className="flex items-center justify-center gap-6 mt-14 pt-10 border-t border-white/6">
+            <div className="flex items-center justify-center gap-0 mt-14 pt-10 border-t border-white/6 w-full max-w-sm mx-auto">
               {[
                 { label: 'PLA / PETG', sub: 'Premium materials' },
                 { label: 'Modular', sub: 'Expandable system' },
                 { label: 'USA Built', sub: 'Small batch' },
               ].map((item, i) => (
-                <div key={i} className="text-center">
-                  <p className="text-sm font-semibold text-hearthstone">{item.label}</p>
-                  <p className="text-xs text-hearthstone/35 mt-0.5">{item.sub}</p>
-                </div>
+                <>
+                  {i > 0 && <div key={`div-${i}`} className="w-px h-8 bg-white/10 mx-6 shrink-0" />}
+                  <div key={i} className="text-center shrink-0">
+                    <p className="text-sm font-semibold text-hearthstone">{item.label}</p>
+                    <p className="text-xs text-hearthstone/35 mt-0.5">{item.sub}</p>
+                  </div>
+                </>
               ))}
             </div>
           </div>
@@ -161,7 +165,9 @@ export default async function HomePage() {
               {FEATURES.map((f, i) => (
                 <div key={i} className="relative p-8 rounded-2xl border border-white/8 bg-white/[0.02] hover:border-brand-orange/25 hover:bg-brand-orange/[0.02] transition-all group">
                   <div className="absolute top-4 right-4 w-1.5 h-1.5 rounded-full bg-brand-orange/30 group-hover:bg-brand-orange/60 transition-colors" />
-                  <div className="text-4xl mb-5">{f.icon}</div>
+                  <div className="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center mb-5 group-hover:bg-brand-orange/15 transition-colors">
+                    <f.Icon className="w-5 h-5 text-brand-orange" />
+                  </div>
                   <h3 className="text-base font-semibold text-hearthstone mb-2.5">{f.title}</h3>
                   <p className="text-hearthstone/45 text-sm leading-relaxed">{f.desc}</p>
                 </div>

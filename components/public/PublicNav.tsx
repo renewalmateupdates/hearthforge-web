@@ -30,12 +30,12 @@ export default function PublicNav({ items }: Props) {
         </Link>
 
         {/* Center — Desktop nav */}
-        <nav className="hidden md:flex items-center justify-center gap-0.5">
+        <nav className="hidden md:flex items-center justify-center gap-1">
           {items.map(item => (
             <Link
               key={item.id}
               href={item.url}
-              className={`px-3.5 py-2 rounded-lg text-sm font-medium transition-all ${
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 isActive(item.url)
                   ? 'text-hearthstone bg-white/8'
                   : 'text-hearthstone/50 hover:text-hearthstone hover:bg-white/5'
