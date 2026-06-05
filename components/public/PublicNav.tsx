@@ -17,9 +17,7 @@ export default function PublicNav({ items }: Props) {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-forge-night/90 backdrop-blur-xl border-b border-white/6">
-      {/* grid-cols-[1fr_auto_1fr]: left col and right col get equal space,
-          center col is auto-sized — this gives true optical center to the nav */}
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 h-16 grid grid-cols-[1fr_auto_1fr] items-center">
+      <div className="hf-nav">
 
         {/* Left — Logo */}
         <Link href="/" className="flex items-center gap-2.5 justify-self-start">
