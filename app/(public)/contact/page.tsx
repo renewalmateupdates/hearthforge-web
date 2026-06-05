@@ -18,13 +18,13 @@ export default async function ContactPage() {
 
       {/* Page header */}
       <section className="pt-28 md:pt-32 pb-16 border-b border-white/5">
-        <div className="max-w-5xl mx-auto px-6 md:px-10">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <h1 className="text-5xl md:text-6xl font-bold text-hearthstone mb-4">Get in Touch</h1>
           <p className="text-hearthstone/50 text-xl">Custom orders, questions, or just want to talk shop?</p>
         </div>
       </section>
 
-      <div className="max-w-5xl mx-auto px-6 md:px-10 py-16">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left */}
           <div>
