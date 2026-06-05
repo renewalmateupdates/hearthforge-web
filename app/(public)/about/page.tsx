@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import Link from 'next/link'
+import { Target, Gauge, ShieldCheck } from 'lucide-react'
 
 export const metadata = {
   title: 'About',
@@ -7,9 +8,9 @@ export const metadata = {
 }
 
 const VALUES = [
-  { icon: '🎯', title: 'Purpose-Built', desc: 'Every product is designed for how creators actually work — not what looks good in a spec sheet.' },
-  { icon: '🔩', title: 'Precision First', desc: 'We obsess over tolerances, finish quality, and fit. If it isn\'t right, it doesn\'t ship.' },
-  { icon: '🌱', title: 'Built to Last', desc: 'Premium materials and thoughtful design. No planned obsolescence, no throwaway parts.' },
+  { Icon: Target, title: 'Purpose-Built', desc: 'Every product is designed for how creators actually work — not what looks good in a spec sheet.' },
+  { Icon: Gauge, title: 'Precision First', desc: 'We obsess over tolerances, finish quality, and fit. If it isn\'t right, it doesn\'t ship.' },
+  { Icon: ShieldCheck, title: 'Built to Last', desc: 'Premium materials and thoughtful design. No planned obsolescence, no throwaway parts.' },
 ]
 
 const TEAM = [
@@ -32,7 +33,7 @@ export default async function AboutPage() {
     <div className="min-h-screen">
 
       {/* Page header */}
-      <section className="pt-28 md:pt-32 pb-20 text-center relative overflow-hidden">
+      <section className="pt-32 md:pt-36 pb-20 text-center relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-brand-orange/6 rounded-full blur-[120px]" />
         </div>
@@ -53,22 +54,26 @@ export default async function AboutPage() {
       {/* Story */}
       <section className="py-20 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div>
+          {story?.image_url ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 className="text-3xl font-bold text-hearthstone mb-6">
+                  {story?.title || 'Our Story'}
+                </h2>
+                <p className="text-hearthstone/60 leading-relaxed text-lg">{storyContent}</p>
+              </div>
+              <div className="aspect-video rounded-2xl border border-white/8 bg-white/3 overflow-hidden">
+                <img src={story.image_url} alt="Our story" className="w-full h-full object-cover" />
+              </div>
+            </div>
+          ) : (
+            <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold text-hearthstone mb-6">
                 {story?.title || 'Our Story'}
               </h2>
-              <p className="text-hearthstone/60 leading-relaxed text-lg">
-                {storyContent}
-              </p>
+              <p className="text-hearthstone/60 leading-relaxed text-lg">{storyContent}</p>
             </div>
-            <div className="aspect-video rounded-2xl border border-white/8 bg-white/3 flex items-center justify-center overflow-hidden">
-              {story?.image_url
-                ? <img src={story.image_url} alt="Our story" className="w-full h-full object-cover" />
-                : <span className="text-hearthstone/10 text-8xl">🔥</span>
-              }
-            </div>
-          </div>
+          )}
         </div>
       </section>
 
@@ -101,8 +106,10 @@ export default async function AboutPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {VALUES.map((v, i) => (
-              <div key={i} className="p-7 rounded-2xl border border-white/8 bg-white/3 hover:border-brand-orange/20 transition-all">
-                <div className="text-4xl mb-5">{v.icon}</div>
+              <div key={i} className="p-7 rounded-2xl border border-white/8 bg-white/3 hover:border-brand-orange/20 transition-all group">
+                <div className="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center mb-5 group-hover:bg-brand-orange/15 transition-colors">
+                  <v.Icon className="w-5 h-5 text-brand-orange" />
+                </div>
                 <h3 className="text-lg font-semibold text-hearthstone mb-3">{v.title}</h3>
                 <p className="text-hearthstone/50 text-sm leading-relaxed">{v.desc}</p>
               </div>

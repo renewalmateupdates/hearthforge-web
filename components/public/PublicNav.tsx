@@ -17,10 +17,10 @@ export default function PublicNav({ items }: Props) {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-forge-night/90 backdrop-blur-xl border-b border-white/6">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 h-16 grid grid-cols-3 items-center">
+      <div className="relative max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
 
         {/* Left — Logo */}
-        <Link href="/" className="flex items-center gap-2.5 w-fit">
+        <Link href="/" className="flex items-center gap-2.5 z-10">
           <div className="w-7 h-7 rounded-lg bg-brand-orange/15 border border-brand-orange/30 flex items-center justify-center">
             <Flame className="w-4 h-4 text-brand-orange" />
           </div>
@@ -29,8 +29,8 @@ export default function PublicNav({ items }: Props) {
           </span>
         </Link>
 
-        {/* Center — Desktop nav */}
-        <nav className="hidden md:flex items-center justify-center gap-1">
+        {/* Center — Desktop nav (absolutely centered in header) */}
+        <nav className="hidden md:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
           {items.map(item => (
             <Link
               key={item.id}
@@ -47,10 +47,10 @@ export default function PublicNav({ items }: Props) {
         </nav>
 
         {/* Right — CTA + Mobile toggle */}
-        <div className="flex items-center justify-end gap-3">
+        <div className="flex items-center gap-3 z-10">
           <Link
             href="/contact"
-            className="hidden md:inline-flex items-center px-4 py-2 rounded-lg bg-brand-orange hover:bg-amber text-white text-sm font-semibold transition-all shadow-sm shadow-brand-orange/20"
+            className="hidden md:inline-flex items-center px-5 py-2 rounded-lg bg-brand-orange hover:bg-amber text-white text-sm font-semibold transition-all shadow-sm shadow-brand-orange/20"
           >
             Get in Touch
           </Link>
