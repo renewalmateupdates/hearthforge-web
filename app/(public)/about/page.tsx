@@ -106,7 +106,7 @@ export default async function AboutPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {VALUES.map((v, i) => (
-              <div key={i} className="p-7 rounded-2xl border border-white/8 bg-white/3 hover:border-brand-orange/20 transition-all group">
+              <div key={i} className="p-9 rounded-2xl border border-white/8 bg-white/3 hover:border-brand-orange/20 transition-all group">
                 <div className="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center mb-5 group-hover:bg-brand-orange/15 transition-colors">
                   <v.Icon className="w-5 h-5 text-brand-orange" />
                 </div>
@@ -144,8 +144,7 @@ export default async function AboutPage() {
         <div className="hf-section text-center">
           <h2 className="text-3xl font-bold text-hearthstone mb-4">Want to work with us?</h2>
           <p className="text-hearthstone/50 mb-8 text-lg">Custom orders, wholesale, or just to say hey.</p>
-          <Link href="/contact"
-            className="inline-block px-10 py-4 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold text-base transition-colors shadow-lg shadow-brand-orange/20">
+          <Link href="/contact" className="hf-btn-primary">
             Get in Touch
           </Link>
         </div>

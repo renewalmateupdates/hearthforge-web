@@ -121,8 +121,7 @@ export default async function HomePage() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link href="/products"
-                className="px-12 py-4 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold text-base transition-all shadow-lg shadow-brand-orange/25 hover:shadow-brand-orange/40 hover:-translate-y-0.5">
+              <Link href="/products" className="hf-btn-primary">
                 Shop Products
               </Link>
               <Link href="/portfolio"
@@ -156,7 +155,7 @@ export default async function HomePage() {
           <div className="hf-section">
             <div className="hf-section-header">
               <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-3">Why Hearthforge</p>
-              <h2 className="text-2xl font-bold text-hearthstone mb-4">Built different. On purpose.</h2>
+              <h2 className="text-3xl font-bold text-hearthstone mb-4">Built different. On purpose.</h2>
               <p className="text-hearthstone/45 text-lg leading-relaxed">
                 Every piece is designed with purpose and printed with precision.
               </p>
@@ -272,15 +271,14 @@ export default async function HomePage() {
         <section className="py-28 border-t border-white/5 text-center">
           <div className="hf-section">
             <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-5">Get Started</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone mb-4">
+            <h2 className="text-3xl font-bold text-hearthstone mb-4">
               Ready to upgrade your setup?
             </h2>
-            <p className="text-hearthstone/50 text-lg max-w-md mx-auto mb-10 leading-relaxed">
+            <p className="text-hearthstone/50 text-lg mb-10 leading-relaxed" style={{maxWidth:'28rem',marginLeft:'auto',marginRight:'auto'}}>
               Get early access to the Hearthforge modular desk rail system.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link href="/contact"
-                className="px-12 py-4 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold text-base transition-all shadow-lg shadow-brand-orange/25 hover:shadow-brand-orange/40 hover:-translate-y-0.5">
+              <Link href="/contact" className="hf-btn-primary">
                 Get Early Access
               </Link>
               <Link href="/products"

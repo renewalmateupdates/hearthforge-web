@@ -56,7 +56,7 @@ export default function ContactForm() {
             type="text"
             value={form.name}
             onChange={e => setForm(p => ({ ...p, name: e.target.value }))}
-            className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-hearthstone placeholder-hearthstone/25 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent"
+            className="w-full px-5 py-4 rounded-xl bg-white/5 border border-white/10 text-hearthstone placeholder-hearthstone/25 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent"
             placeholder="Your name"
             required
           />
@@ -67,7 +67,7 @@ export default function ContactForm() {
             type="email"
             value={form.email}
             onChange={e => setForm(p => ({ ...p, email: e.target.value }))}
-            className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-hearthstone placeholder-hearthstone/25 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent"
+            className="w-full px-5 py-4 rounded-xl bg-white/5 border border-white/10 text-hearthstone placeholder-hearthstone/25 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent"
             placeholder="you@email.com"
             required
           />
@@ -80,7 +80,7 @@ export default function ContactForm() {
           type="tel"
           value={form.phone}
           onChange={e => setForm(p => ({ ...p, phone: e.target.value }))}
-          className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-hearthstone placeholder-hearthstone/25 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent"
+          className="w-full px-5 py-4 rounded-xl bg-white/5 border border-white/10 text-hearthstone placeholder-hearthstone/25 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent"
           placeholder="(optional)"
         />
       </div>
@@ -91,7 +91,7 @@ export default function ContactForm() {
           type="text"
           value={form.subject}
           onChange={e => setForm(p => ({ ...p, subject: e.target.value }))}
-          className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-hearthstone placeholder-hearthstone/25 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent"
+          className="w-full px-5 py-4 rounded-xl bg-white/5 border border-white/10 text-hearthstone placeholder-hearthstone/25 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent"
           placeholder="What's this about?"
         />
       </div>
@@ -101,7 +101,7 @@ export default function ContactForm() {
         <textarea
           value={form.message}
           onChange={e => setForm(p => ({ ...p, message: e.target.value }))}
-          className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-hearthstone placeholder-hearthstone/25 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent resize-y min-h-[140px]"
+          className="w-full px-5 py-4 rounded-xl bg-white/5 border border-white/10 text-hearthstone placeholder-hearthstone/25 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent resize-y min-h-[140px]"
           placeholder="Tell us what you need..."
           required
         />
@@ -114,7 +114,8 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={sending}
-        className="w-full py-4 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold text-base transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full hf-btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
+        style={{width:'100%',borderRadius:'0.75rem'}}
       >
         {sending ? 'Sending...' : 'Send Message'}
       </button>
