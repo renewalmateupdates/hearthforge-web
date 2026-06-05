@@ -122,7 +122,7 @@ export default async function HomePage() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link href="/products"
-                className="px-10 py-3.5 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold text-base transition-all shadow-lg shadow-brand-orange/25 hover:shadow-brand-orange/40 hover:-translate-y-0.5">
+                className="px-12 py-4 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold text-base transition-all shadow-lg shadow-brand-orange/25 hover:shadow-brand-orange/40 hover:-translate-y-0.5">
                 Shop Products
               </Link>
               <Link href="/portfolio"
@@ -280,7 +280,7 @@ export default async function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/contact"
-                className="px-10 py-3.5 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold text-base transition-all shadow-lg shadow-brand-orange/25 hover:shadow-brand-orange/40 hover:-translate-y-0.5">
+                className="px-12 py-4 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold text-base transition-all shadow-lg shadow-brand-orange/25 hover:shadow-brand-orange/40 hover:-translate-y-0.5">
                 Get Early Access
               </Link>
               <Link href="/products"
