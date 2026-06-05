@@ -16,9 +16,9 @@ export default function AdminHeader({ profile }: { profile: Profile }) {
   }
 
   return (
-    <header className="h-14 border-b border-white/8 px-6 flex items-center justify-between bg-forge-night/80 backdrop-blur-sm sticky top-0 z-10">
+    <header className="h-14 border-b border-white/8 px-8 flex items-center justify-between bg-forge-night/80 backdrop-blur-sm sticky top-0 z-10">
       <div />
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-5">
         <a
           href="/"
           target="_blank"
