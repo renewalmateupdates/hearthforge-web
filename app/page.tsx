@@ -52,7 +52,7 @@ function StarRating({ rating }: { rating: number }) {
   )
 }
 
-const cn = 'max-w-4xl mx-auto px-5 sm:px-8'
+const cn = 'hf-section'
 
 export default async function HomePage() {
   const supabase = await createClient()
@@ -100,7 +100,7 @@ export default async function HomePage() {
               style={{ backgroundImage: 'linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
           </div>
 
-          <div className={`relative w-full max-w-4xl mx-auto px-5 sm:px-8 py-32 flex flex-col items-center text-center`}>
+          <div className={`relative w-full hf-section py-32 flex flex-col items-center text-center`}>
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-orange/25 bg-brand-orange/8 text-brand-orange text-xs font-semibold mb-10 tracking-widest">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
@@ -153,7 +153,7 @@ export default async function HomePage() {
 
         {/* ─── FEATURES ─── */}
         <section className="py-24 border-t border-white/5">
-          <div className="max-w-4xl mx-auto px-5 sm:px-8">
+          <div className="hf-section">
             <div className="text-center mb-14 max-w-2xl mx-auto">
               <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-3">Why Hearthforge</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone mb-4">Built different. On purpose.</h2>
@@ -179,7 +179,7 @@ export default async function HomePage() {
         {/* ─── FEATURED PRODUCTS ─── */}
         {(featuredProducts?.length ?? 0) > 0 && (
           <section className="py-24 border-t border-white/5">
-            <div className="max-w-4xl mx-auto px-5 sm:px-8">
+            <div className="hf-section">
               <div className="flex items-end justify-between mb-10">
                 <div>
                   <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-2">Products</p>
@@ -216,7 +216,7 @@ export default async function HomePage() {
         {/* ─── PORTFOLIO PREVIEW ─── */}
         {(portfolioItems?.length ?? 0) > 0 && (
           <section className="py-24 border-t border-white/5">
-            <div className="max-w-4xl mx-auto px-5 sm:px-8">
+            <div className="hf-section">
               <div className="flex items-end justify-between mb-10">
                 <div>
                   <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-2">Portfolio</p>
@@ -247,7 +247,7 @@ export default async function HomePage() {
         {/* ─── TESTIMONIALS ─── */}
         {(testimonials?.length ?? 0) > 0 && (
           <section className="py-24 border-t border-white/5">
-            <div className="max-w-4xl mx-auto px-5 sm:px-8">
+            <div className="hf-section">
               <div className="text-center mb-12">
                 <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-3">Reviews</p>
                 <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone">What Creators Say</h2>
@@ -270,7 +270,7 @@ export default async function HomePage() {
 
         {/* ─── CTA ─── */}
         <section className="py-28 border-t border-white/5 text-center">
-          <div className="max-w-4xl mx-auto px-5 sm:px-8">
+          <div className="hf-section">
             <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-5">Get Started</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone mb-4">
               Ready to upgrade your setup?
