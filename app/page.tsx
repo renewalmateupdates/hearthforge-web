@@ -52,7 +52,7 @@ function StarRating({ rating }: { rating: number }) {
   )
 }
 
-const cn = 'max-w-7xl mx-auto px-5 sm:px-8'
+const cn = 'max-w-5xl mx-auto px-5 sm:px-8'
 
 export default async function HomePage() {
   const supabase = await createClient()
@@ -100,7 +100,7 @@ export default async function HomePage() {
               style={{ backgroundImage: 'linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
           </div>
 
-          <div className={`relative w-full max-w-7xl mx-auto px-5 sm:px-8 py-32 flex flex-col items-center text-center`}>
+          <div className={`relative w-full max-w-5xl mx-auto px-5 sm:px-8 py-32 flex flex-col items-center text-center`}>
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-orange/25 bg-brand-orange/8 text-brand-orange text-xs font-semibold mb-10 tracking-widest">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
@@ -126,7 +126,7 @@ export default async function HomePage() {
                 Shop Products
               </Link>
               <Link href="/portfolio"
-                className="px-10 py-3.5 rounded-xl border border-brand-orange/50 bg-brand-orange/10 hover:bg-brand-orange/18 hover:border-brand-orange/70 text-hearthstone font-semibold text-base transition-all">
+                className="px-10 py-3.5 rounded-xl border border-white/30 text-white/80 font-semibold text-base transition-all hover:border-white/55 hover:bg-white/5 hover:text-white">
                 View Portfolio
               </Link>
             </div>
@@ -153,7 +153,7 @@ export default async function HomePage() {
 
         {/* ─── FEATURES ─── */}
         <section className="py-24 border-t border-white/5">
-          <div className="max-w-7xl mx-auto px-5 sm:px-8">
+          <div className="max-w-5xl mx-auto px-5 sm:px-8">
             <div className="text-center mb-14 max-w-2xl mx-auto">
               <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-3">Why Hearthforge</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone mb-4">Built different. On purpose.</h2>
@@ -179,7 +179,7 @@ export default async function HomePage() {
         {/* ─── FEATURED PRODUCTS ─── */}
         {(featuredProducts?.length ?? 0) > 0 && (
           <section className="py-24 border-t border-white/5">
-            <div className="max-w-7xl mx-auto px-5 sm:px-8">
+            <div className="max-w-5xl mx-auto px-5 sm:px-8">
               <div className="flex items-end justify-between mb-10">
                 <div>
                   <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-2">Products</p>
@@ -216,7 +216,7 @@ export default async function HomePage() {
         {/* ─── PORTFOLIO PREVIEW ─── */}
         {(portfolioItems?.length ?? 0) > 0 && (
           <section className="py-24 border-t border-white/5">
-            <div className="max-w-7xl mx-auto px-5 sm:px-8">
+            <div className="max-w-5xl mx-auto px-5 sm:px-8">
               <div className="flex items-end justify-between mb-10">
                 <div>
                   <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-2">Portfolio</p>
@@ -247,7 +247,7 @@ export default async function HomePage() {
         {/* ─── TESTIMONIALS ─── */}
         {(testimonials?.length ?? 0) > 0 && (
           <section className="py-24 border-t border-white/5">
-            <div className="max-w-7xl mx-auto px-5 sm:px-8">
+            <div className="max-w-5xl mx-auto px-5 sm:px-8">
               <div className="text-center mb-12">
                 <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-3">Reviews</p>
                 <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone">What Creators Say</h2>
@@ -270,7 +270,7 @@ export default async function HomePage() {
 
         {/* ─── CTA ─── */}
         <section className="py-28 border-t border-white/5">
-          <div className="max-w-7xl mx-auto px-5 sm:px-8">
+          <div className="max-w-5xl mx-auto px-5 sm:px-8">
             <div className="relative rounded-3xl border border-brand-orange/18 bg-gradient-to-br from-brand-orange/8 via-brand-orange/5 to-transparent px-8 sm:px-14 py-20 text-center overflow-hidden">
               {/* Glow */}
               <div className="absolute inset-0 pointer-events-none">
@@ -305,4 +305,5 @@ export default async function HomePage() {
     </div>
   )
 }
+
 
