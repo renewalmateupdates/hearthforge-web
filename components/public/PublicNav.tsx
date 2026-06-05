@@ -17,10 +17,12 @@ export default function PublicNav({ items }: Props) {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-forge-night/90 backdrop-blur-xl border-b border-white/6">
-      <div className="relative max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+      {/* grid-cols-[1fr_auto_1fr]: left col and right col get equal space,
+          center col is auto-sized — this gives true optical center to the nav */}
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 h-16 grid grid-cols-[1fr_auto_1fr] items-center">
 
         {/* Left — Logo */}
-        <Link href="/" className="flex items-center gap-2.5 z-10">
+        <Link href="/" className="flex items-center gap-2.5 justify-self-start">
           <div className="w-7 h-7 rounded-lg bg-brand-orange/15 border border-brand-orange/30 flex items-center justify-center">
             <Flame className="w-4 h-4 text-brand-orange" />
           </div>
@@ -29,8 +31,8 @@ export default function PublicNav({ items }: Props) {
           </span>
         </Link>
 
-        {/* Center — Desktop nav (absolutely centered in header) */}
-        <nav className="hidden md:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
+        {/* Center — Desktop nav */}
+        <nav className="hidden md:flex items-center gap-1">
           {items.map(item => (
             <Link
               key={item.id}
@@ -47,7 +49,7 @@ export default function PublicNav({ items }: Props) {
         </nav>
 
         {/* Right — CTA + Mobile toggle */}
-        <div className="flex items-center gap-3 z-10">
+        <div className="flex items-center gap-3 justify-self-end">
           <Link
             href="/contact"
             className="hidden md:inline-flex items-center px-5 py-2 rounded-lg bg-brand-orange hover:bg-amber text-white text-sm font-semibold transition-all shadow-sm shadow-brand-orange/20"
