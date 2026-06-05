@@ -60,7 +60,7 @@ export default async function PortfolioPage() {
               We&apos;re documenting our first builds. Check back soon to see setups, prints, and custom work from the shop.
             </p>
             <Link href="/contact"
-              className="inline-block px-8 py-4 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold transition-colors shadow-lg shadow-brand-orange/20">
+              className="hf-btn-primary">
               Request Custom Work
             </Link>
           </div>
