@@ -32,11 +32,11 @@ export default async function AboutPage() {
     <div className="min-h-screen">
 
       {/* Page header */}
-      <section className="pt-32 pb-20 text-center relative overflow-hidden">
+      <section className="pt-28 md:pt-32 pb-20 text-center relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-brand-orange/6 rounded-full blur-[120px]" />
         </div>
-        <div className="relative max-w-3xl mx-auto px-6">
+        <div className="relative max-w-3xl mx-auto px-6 md:px-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-orange/30 bg-brand-orange/10 text-brand-orange text-xs font-semibold mb-6 tracking-wide">
             OUR STORY
           </div>
@@ -52,7 +52,7 @@ export default async function AboutPage() {
 
       {/* Story */}
       <section className="py-20 border-t border-white/5">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6 md:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl font-bold text-hearthstone mb-6">
@@ -74,7 +74,7 @@ export default async function AboutPage() {
 
       {/* Mission */}
       <section className="py-20 border-t border-white/5">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6 md:px-10">
           <div className="relative rounded-3xl border border-brand-orange/20 bg-brand-orange/5 px-8 py-16 text-center overflow-hidden">
             <div className="absolute inset-0 pointer-events-none">
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-brand-orange/10 rounded-full blur-[80px]" />
@@ -94,7 +94,7 @@ export default async function AboutPage() {
 
       {/* Values */}
       <section className="py-20 border-t border-white/5">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6 md:px-10">
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold text-hearthstone mb-3">What We Stand For</h2>
             <p className="text-hearthstone/50">The principles behind every piece we make.</p>
@@ -113,7 +113,7 @@ export default async function AboutPage() {
 
       {/* Team */}
       <section className="py-20 border-t border-white/5">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6 md:px-10">
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold text-hearthstone mb-3">The Team</h2>
             <p className="text-hearthstone/50">Two founders. One shared obsession with quality.</p>

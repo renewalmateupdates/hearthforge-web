@@ -19,7 +19,7 @@ export default function PublicFooter({ footerLinks, settings }: Props) {
 
   return (
     <footer className="bg-forge-night border-t border-white/8 mt-20">
-      <div className="max-w-6xl mx-auto px-5 py-12">
+      <div className="max-w-6xl mx-auto px-6 md:px-10 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
           {/* Brand */}
           <div>

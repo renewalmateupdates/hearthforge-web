@@ -95,7 +95,7 @@ export default async function HomePage() {
             <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-amber/4 rounded-full blur-[120px]" />
           </div>
 
-          <div className="relative w-full max-w-4xl mx-auto px-6 py-28 text-center">
+          <div className="relative w-full max-w-3xl mx-auto px-6 md:px-10 py-28 text-center">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-orange/30 bg-brand-orange/10 text-brand-orange text-xs font-semibold mb-8 tracking-wide">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
@@ -129,11 +129,11 @@ export default async function HomePage() {
         </section>
 
         {/* ── FEATURES ── */}
-        <section className="py-24 border-t border-white/5">
-          <div className="max-w-6xl mx-auto px-6">
+        <section className="py-20 md:py-28 border-t border-white/5">
+          <div className="max-w-6xl mx-auto px-6 md:px-10">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone mb-4">Why Hearthforge?</h2>
-              <p className="text-hearthstone/50 text-lg max-w-lg mx-auto">
+              <p className="text-hearthstone/50 text-lg max-w-md mx-auto">
                 Every piece is designed with purpose and printed with precision.
               </p>
             </div>
@@ -152,7 +152,7 @@ export default async function HomePage() {
         {/* ── FEATURED PRODUCTS (only if data exists) ── */}
         {(featuredProducts?.length ?? 0) > 0 && (
           <section className="py-24 border-t border-white/5">
-            <div className="max-w-6xl mx-auto px-6">
+            <div className="max-w-6xl mx-auto px-6 md:px-10">
               <div className="flex items-end justify-between mb-10">
                 <div>
                   <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone">Our Products</h2>
@@ -189,7 +189,7 @@ export default async function HomePage() {
         {/* ── PORTFOLIO (only if data exists) ── */}
         {(portfolioItems?.length ?? 0) > 0 && (
           <section className="py-24 border-t border-white/5">
-            <div className="max-w-6xl mx-auto px-6">
+            <div className="max-w-6xl mx-auto px-6 md:px-10">
               <div className="flex items-end justify-between mb-10">
                 <div>
                   <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone">From the Workshop</h2>
@@ -220,7 +220,7 @@ export default async function HomePage() {
         {/* ── TESTIMONIALS (only if data exists) ── */}
         {(testimonials?.length ?? 0) > 0 && (
           <section className="py-24 border-t border-white/5">
-            <div className="max-w-6xl mx-auto px-6">
+            <div className="max-w-6xl mx-auto px-6 md:px-10">
               <div className="text-center mb-12">
                 <h2 className="text-3xl sm:text-4xl font-bold text-hearthstone">What Creators Say</h2>
               </div>
@@ -241,8 +241,8 @@ export default async function HomePage() {
         )}
 
         {/* ── CTA ── */}
-        <section className="py-28 border-t border-white/5">
-          <div className="max-w-6xl mx-auto px-6">
+        <section className="py-20 md:py-28 border-t border-white/5">
+          <div className="max-w-6xl mx-auto px-6 md:px-10">
             <div className="relative rounded-3xl border border-brand-orange/20 bg-brand-orange/5 px-8 py-20 text-center overflow-hidden">
               <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-orange/10 rounded-full blur-[100px]" />
