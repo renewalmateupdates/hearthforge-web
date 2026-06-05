@@ -69,7 +69,7 @@ export default async function ProductsPage() {
               We&apos;re finishing production on our first lineup. Leave your email and we&apos;ll notify you the moment products drop.
             </p>
             <Link href="/contact"
-              className="inline-block px-8 py-4 rounded-xl bg-brand-orange hover:bg-amber text-white font-semibold transition-colors shadow-lg shadow-brand-orange/20">
+              className="hf-btn-primary">
               Get Notified
             </Link>
           </div>

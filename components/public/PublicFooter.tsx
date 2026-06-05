@@ -99,7 +99,7 @@ export default function PublicFooter({ footerLinks, settings }: Props) {
             )}
             <Link
               href="/contact"
-              className="inline-flex items-center mt-4 px-4 py-2 rounded-lg border border-brand-orange/30 bg-brand-orange/8 text-brand-orange text-xs font-semibold hover:bg-brand-orange/15 transition-colors"
+              className="hf-footer-btn"
             >
               Get in Touch
             </Link>

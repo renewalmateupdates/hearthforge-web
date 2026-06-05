@@ -124,14 +124,13 @@ export default async function HomePage() {
               <Link href="/products" className="hf-btn-primary">
                 Shop Products
               </Link>
-              <Link href="/portfolio"
-                className="px-4 py-3.5 text-hearthstone/70 font-semibold text-base transition-colors hover:text-hearthstone">
-                View Portfolio →
+              <Link href="/portfolio" className="hf-btn-outline">
+                View Portfolio
               </Link>
             </div>
 
-            {/* Social proof strip */}
-            <div className="flex items-center justify-center gap-8 mt-14 pt-10 border-t border-white/6 w-full max-w-xs mx-auto">
+            {/* Social proof strip — extra top margin for breathing room from buttons */}
+            <div className="flex items-center justify-center gap-8 border-t border-white/6 w-full max-w-xs mx-auto" style={{marginTop:'3.5rem',paddingTop:'2.5rem'}}>
               <div className="text-center shrink-0">
                 <p className="text-sm font-semibold text-hearthstone">PLA / PETG</p>
                 <p className="text-xs text-hearthstone/35 mt-0.5">Premium materials</p>
@@ -162,7 +161,7 @@ export default async function HomePage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {FEATURES.map((f, i) => (
-                <div key={i} className="relative p-8 rounded-2xl border border-white/8 bg-white/[0.02] hover:border-brand-orange/25 hover:bg-brand-orange/[0.02] transition-all group">
+                <div key={i} className="hf-card relative group">
                   <div className="absolute top-4 right-4 w-1.5 h-1.5 rounded-full bg-brand-orange/30 group-hover:bg-brand-orange/60 transition-colors" />
                   <div className="w-10 h-10 rounded-xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center mb-5 group-hover:bg-brand-orange/15 transition-colors">
                     <f.Icon className="w-5 h-5 text-brand-orange" />

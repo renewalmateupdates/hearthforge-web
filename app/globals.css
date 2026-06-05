@@ -128,20 +128,38 @@ body {
 /* ── Primary CTA button ── */
 .hf-btn-primary {
   display: inline-block;
-  padding: 0.875rem 2.25rem;  /* comfortable — text has clear breathing room */
-  border-radius: 0.75rem;
+  padding: 0.7rem 1.75rem;
+  border-radius: 0.625rem;
   background-color: var(--brand-orange);
   color: #fff;
   font-weight: 600;
   font-size: 1rem;
   transition: background-color 0.15s, box-shadow 0.15s, transform 0.15s;
-  box-shadow: 0 4px 18px rgb(212 87 26 / 0.25);
+  box-shadow: 0 3px 14px rgb(212 87 26 / 0.25);
   cursor: pointer;
 }
 .hf-btn-primary:hover {
   background-color: var(--amber-spark);
-  box-shadow: 0 4px 22px rgb(212 87 26 / 0.40);
+  box-shadow: 0 3px 18px rgb(212 87 26 / 0.40);
   transform: translateY(-1px);
+}
+
+/* ── Outline/secondary button — same height as primary, different fill ── */
+.hf-btn-outline {
+  display: inline-block;
+  padding: 0.7rem 1.75rem;
+  border-radius: 0.625rem;
+  border: 1.5px solid rgb(237 232 226 / 0.30);
+  color: rgb(237 232 226 / 0.75);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
+  cursor: pointer;
+}
+.hf-btn-outline:hover {
+  border-color: rgb(237 232 226 / 0.55);
+  color: var(--hearthstone);
+  background-color: rgb(255 255 255 / 0.04);
 }
 
 /* ── Nav Get in Touch button — no display rule (Tailwind hidden/md:flex handles it) ── */
@@ -159,12 +177,34 @@ body {
   background-color: var(--amber-spark);
 }
 
+/* ── Footer contact button — small outlined nav-style ── */
+.hf-footer-btn {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(212 87 26 / 0.40);
+  color: var(--brand-orange);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+.hf-footer-btn:hover {
+  background-color: rgb(212 87 26 / 0.10);
+  border-color: rgb(212 87 26 / 0.60);
+}
+
 /* ── Card with generous padding so text never touches the border ── */
 .hf-card {
   padding: 2rem;
   border-radius: 1rem;
   border: 1px solid rgb(255 255 255 / 0.08);
   background: rgb(255 255 255 / 0.03);
+  transition: border-color 0.15s;
+}
+.hf-card:hover {
+  border-color: rgb(212 87 26 / 0.20);
 }
 
 /* Admin form styles */
