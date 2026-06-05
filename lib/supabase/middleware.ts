@@ -25,29 +25,16 @@ export async function updateSession(request: NextRequest) {
     }
   )
 
+  // Refresh session — must call getUser() to keep session alive
   const { data: { user } } = await supabase.auth.getUser()
 
-  // Protect /admin routes
-  if (request.nextUrl.pathname.startsWith('/admin')) {
-    if (!user) {
-      const url = request.nextUrl.clone()
-      url.pathname = '/login'
-      url.searchParams.set('redirect', request.nextUrl.pathname)
-      return NextResponse.redirect(url)
-    }
-
-    // Check admin role
-    const { data: profile } = await supabase
-      .from('profiles')
-      .select('role')
-      .eq('id', user.id)
-      .single()
-
-    if (!profile || !['admin', 'editor'].includes(profile.role)) {
-      const url = request.nextUrl.clone()
-      url.pathname = '/unauthorized'
-      return NextResponse.redirect(url)
-    }
+  // Redirect unauthenticated users away from /admin
+  // Role check happens in app/admin/layout.tsx (Node.js server component)
+  if (request.nextUrl.pathname.startsWith('/admin') && !user) {
+    const url = request.nextUrl.clone()
+    url.pathname = '/login'
+    url.searchParams.set('redirect', request.nextUrl.pathname)
+    return NextResponse.redirect(url)
   }
 
   return supabaseResponse
