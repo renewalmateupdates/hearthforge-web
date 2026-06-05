@@ -19,7 +19,7 @@ export default function PublicFooter({ footerLinks, settings }: Props) {
 
   return (
     <footer className="bg-forge-night border-t border-white/8">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 py-14">
+      <div className="max-w-5xl mx-auto px-5 sm:px-8 py-14">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 mb-12">
 
           {/* Brand */}
@@ -139,3 +139,4 @@ export default function PublicFooter({ footerLinks, settings }: Props) {
     </footer>
   )
 }
+

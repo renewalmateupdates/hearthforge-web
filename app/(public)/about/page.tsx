@@ -53,7 +53,7 @@ export default async function AboutPage() {
 
       {/* Story */}
       <section className="py-20 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8">
+        <div className="max-w-4xl mx-auto px-5 sm:px-8">
           {story?.image_url ? (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
               <div>
@@ -79,7 +79,7 @@ export default async function AboutPage() {
 
       {/* Mission */}
       <section className="py-20 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8">
+        <div className="max-w-4xl mx-auto px-5 sm:px-8">
           <div className="relative rounded-3xl border border-brand-orange/20 bg-brand-orange/5 px-8 py-16 text-center overflow-hidden">
             <div className="absolute inset-0 pointer-events-none">
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-brand-orange/10 rounded-full blur-[80px]" />
@@ -99,7 +99,7 @@ export default async function AboutPage() {
 
       {/* Values */}
       <section className="py-20 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8">
+        <div className="max-w-4xl mx-auto px-5 sm:px-8">
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold text-hearthstone mb-3">What We Stand For</h2>
             <p className="text-hearthstone/50">The principles behind every piece we make.</p>
@@ -120,7 +120,7 @@ export default async function AboutPage() {
 
       {/* Team */}
       <section className="py-20 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8">
+        <div className="max-w-4xl mx-auto px-5 sm:px-8">
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold text-hearthstone mb-3">The Team</h2>
             <p className="text-hearthstone/50">Two founders. One shared obsession with quality.</p>
@@ -141,7 +141,7 @@ export default async function AboutPage() {
 
       {/* CTA */}
       <section className="py-20 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8 text-center">
+        <div className="max-w-4xl mx-auto px-5 sm:px-8 text-center">
           <h2 className="text-3xl font-bold text-hearthstone mb-4">Want to work with us?</h2>
           <p className="text-hearthstone/50 mb-8 text-lg">Custom orders, wholesale, or just to say hey.</p>
           <Link href="/contact"
@@ -154,3 +154,4 @@ export default async function AboutPage() {
     </div>
   )
 }
+
