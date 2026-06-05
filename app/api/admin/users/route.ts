@@ -65,7 +65,15 @@ export async function POST(request: Request) {
 
     if (authError) return NextResponse.json({ error: authError.message }, { status: 500 })
 
-    await supabase.from('profiles').update({ role: role || 'editor' }).eq('id', authData.user.id)
+    // Use service client + upsert so it works whether or not the trigger fired
+    await serviceClient.from('profiles').upsert({
+      id: authData.user.id,
+      email,
+      full_name: full_name || email.split('@')[0],
+      role: role || 'editor',
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+    })
 
     return NextResponse.json({ success: true, userId: authData.user.id }, { status: 201 })
   } catch (err) {
