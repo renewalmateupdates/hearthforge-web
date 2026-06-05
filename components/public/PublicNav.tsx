@@ -50,7 +50,7 @@ export default function PublicNav({ items }: Props) {
         <div className="flex items-center gap-3 justify-self-end">
           <Link
             href="/contact"
-            className="hidden md:inline-flex items-center px-5 py-2 rounded-lg bg-brand-orange hover:bg-amber text-white text-sm font-semibold transition-all shadow-sm shadow-brand-orange/20"
+            className="hidden md:inline-flex hf-nav-btn"
           >
             Get in Touch
           </Link>
