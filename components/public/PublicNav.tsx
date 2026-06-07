@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Flame, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import type { NavItem } from '@/types'
 
 interface Props { items: NavItem[] }
@@ -21,9 +21,7 @@ export default function PublicNav({ items }: Props) {
 
         {/* Left — Logo */}
         <Link href="/" className="flex items-center gap-2.5 justify-self-start">
-          <div className="w-7 h-7 rounded-lg bg-brand-orange/15 border border-brand-orange/30 flex items-center justify-center">
-            <Flame className="w-4 h-4 text-brand-orange" />
-          </div>
+          <img src="/logo.png" alt="Hearthforge" className="w-8 h-8 object-contain invert" />
           <span className="font-bold text-sm tracking-widest text-hearthstone hidden sm:block">
             HEARTH<span className="text-brand-orange">FORGE</span>
           </span>

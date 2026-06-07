@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { Flame } from 'lucide-react'
 import type { NavItem } from '@/types'
 
 interface Props {
@@ -25,9 +24,7 @@ export default function PublicFooter({ footerLinks, settings }: Props) {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-flex items-center gap-2.5 mb-4">
-              <div className="w-7 h-7 rounded-lg bg-brand-orange/15 border border-brand-orange/30 flex items-center justify-center">
-                <Flame className="w-4 h-4 text-brand-orange" />
-              </div>
+              <img src="/logo.png" alt="Hearthforge" className="w-8 h-8 object-contain invert" />
               <span className="font-bold text-sm tracking-widest text-hearthstone">
                 HEARTH<span className="text-brand-orange">FORGE</span>
               </span>
