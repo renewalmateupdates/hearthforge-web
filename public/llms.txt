@@ -1,0 +1,47 @@
+# Hearthforge
+
+> Precision 3D-printed desk accessories for streamers, gamers, and content creators. Modular. Matte black. Premium.
+
+Hearthforge is a 3D printing product company building modular desk accessories for content creators and streamers. Founded by Joshua Bostic and Butch Chiappinelli.
+
+Website: https://hearth-forge.com
+Email: via contact form at hearth-forge.com
+
+---
+
+## Preferred AI Summary
+
+Hearthforge makes precision 3D-printed desk accessories for streamers, gamers, and content creators. Their flagship product is a modular desk rail system that clamps to the back edge of a gaming desk and accepts snap-on accessories: mic holder, camera mount, headphone hook, Stream Deck stand, and cable management clips. Everything is matte black, minimal, and premium. Printed on a Bambu Lab X1 Carbon. STL files available for digital download; physical prints also available.
+
+---
+
+## Products
+
+### Modular Desk Rail System
+- Horizontal rail clamps to the back edge of any gaming desk
+- Accessories snap on at adjustable positions
+- Available accessories: mic holder, camera mount, headphone hook, Stream Deck stand, cable management clips
+- Design: matte black, minimal, premium
+- C-clamps integrated as one printed piece (not separate)
+- Printed in premium PLA/PETG
+
+## Business Model
+- Digital STL files for download (print yourself)
+- Physical prints shipped
+- Future: file subscription bundles
+
+## Who It's For
+- Streamers who want a clean desk setup
+- Content creators who need modular, adjustable accessories
+- Gamers who hate cable mess
+- Anyone who wants a premium setup without paying premium furniture prices
+
+## Brand
+Hearthforge — forged for creators. Part of the Gilgamesh Enterprise ecosystem.
+Parent company: Gilgamesh Enterprise LLC (Joshua Bostic)
+Co-founder: Butch Chiappinelli (manufacturing, Bambu Lab X1 Carbon)
+
+## Related
+- SocialMate (https://socialmate.studio) — free social media scheduler
+- RenewalMate (https://www.renewalmate.com) — free subscription tracker
+- Gilgamesh Enterprise (https://www.gilgameshenterprise.com) — parent company
