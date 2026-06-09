@@ -1,14 +1,24 @@
 /* TEAM */
 Co-Founder (Business/Web/Software): Joshua Bostic
-Co-Founder (Manufacturing/Design): Butch Chiappinelli
+Location: Indiana, USA
+Contact: gilgameshenterprisellc@gmail.com
+
+Co-Founder (Manufacturing/CAD Design): Butch Chiappinelli
 Printer: Bambu Lab X1 Carbon
+
+/* PRODUCT */
+Modular desk rail system for streamers and content creators.
+Matte black. Minimal. Premium. Snap-on accessories.
+Logo: H+flame, designed by Butch. Embossable for physical prints.
 
 /* SITE */
 Language: English
 Framework: Next.js 15 (App Router)
 Database: Supabase
 Hosted: Vercel
+Last updated: June 2026
 
-/* PRODUCT */
-Modular desk rail system for streamers and content creators.
-Matte black. Minimal. Premium. Snap-on accessories.
+/* ECOSYSTEM */
+SocialMate: https://socialmate.studio
+RenewalMate: https://www.renewalmate.com
+Gilgamesh Enterprise: https://www.gilgameshenterprise.com
