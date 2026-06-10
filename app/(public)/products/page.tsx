@@ -89,7 +89,7 @@ function ProductCard({ product: p }: { product: Product }) {
           : <div className="w-full h-full flex items-center justify-center"><span className="text-hearthstone/10 text-6xl">⚙</span></div>
         }
       </div>
-      <div className="p-6">
+      <div className="p-8">
         <h3 className="font-semibold text-hearthstone group-hover:text-brand-orange transition-colors text-balance">{p.name}</h3>
         {p.short_description && <p className="text-hearthstone/50 text-sm mt-2 leading-relaxed line-clamp-2">{p.short_description}</p>}
         <p className="text-amber font-semibold mt-4 text-sm">
