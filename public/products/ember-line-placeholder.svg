@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" fill="none">
   <defs>
-    <radialGradient id="glow" cx="50%" cy="38%" r="60%">
+    <radialGradient id="glow" cx="50%" cy="50%" r="62%">
       <stop offset="0%" stop-color="#D4571A" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="#D4571A" stop-opacity="0"/>
     </radialGradient>
@@ -37,9 +37,8 @@
     <line x1="640" y1="0" x2="640" y2="800"/>
   </g>
 
-  <!-- desk surface -->
-  <rect x="0" y="540" width="800" height="260" fill="url(#desk)"/>
-  <rect x="0" y="540" width="800" height="3" fill="#ffffff" fill-opacity="0.06"/>
+  <!-- illustration, recentered within the square frame -->
+  <g transform="translate(0 75)">
 
   <!-- rail (mounted along back edge of desk) -->
   <rect x="90" y="226" width="620" height="26" rx="6" fill="url(#rail)" stroke="#000" stroke-opacity="0.4"/>
@@ -124,4 +123,6 @@
 
   <!-- ember accent line under rail -->
   <rect x="90" y="256" width="620" height="2" fill="url(#emberBar)" opacity="0.5"/>
+
+  </g>
 </svg>
