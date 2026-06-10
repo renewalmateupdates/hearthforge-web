@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" fill="none">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#D4571A" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#D4571A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="emberBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFC040"/>
+      <stop offset="50%" stop-color="#D4571A"/>
+      <stop offset="100%" stop-color="#FFC040"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3a3a3e"/>
+      <stop offset="50%" stop-color="#1c1c1f"/>
+      <stop offset="100%" stop-color="#0c0c0e"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1d"/>
+      <stop offset="100%" stop-color="#0c0c0e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="800" fill="#09080A"/>
+  <rect width="800" height="800" fill="url(#glow)"/>
+
+  <!-- subtle grid -->
+  <g stroke="#ffffff" stroke-opacity="0.025">
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="0" y1="480" x2="800" y2="480"/>
+    <line x1="0" y1="600" x2="800" y2="600"/>
+    <line x1="160" y1="0" x2="160" y2="800"/>
+    <line x1="320" y1="0" x2="320" y2="800"/>
+    <line x1="480" y1="0" x2="480" y2="800"/>
+    <line x1="640" y1="0" x2="640" y2="800"/>
+  </g>
+
+  <!-- desk surface -->
+  <rect x="0" y="540" width="800" height="260" fill="url(#desk)"/>
+  <rect x="0" y="540" width="800" height="3" fill="#ffffff" fill-opacity="0.06"/>
+
+  <!-- rail (mounted along back edge of desk) -->
+  <rect x="90" y="226" width="620" height="26" rx="6" fill="url(#rail)" stroke="#000" stroke-opacity="0.4"/>
+  <rect x="90" y="226" width="620" height="4" rx="2" fill="url(#emberBar)" opacity="0.85"/>
+
+  <!-- C-clamps mounting rail to desk -->
+  <g fill="#1c1c1f" stroke="#000" stroke-opacity="0.4">
+    <path d="M150 252 v60 a10 10 0 0 0 10 10 h26 a10 10 0 0 0 10 -10 v-18 h-14 v14 a4 4 0 0 1 -4 4 h-14 a4 4 0 0 1 -4 -4 v-56z"/>
+    <path d="M610 252 v60 a10 10 0 0 0 10 10 h26 a10 10 0 0 0 10 -10 v-18 h-14 v14 a4 4 0 0 1 -4 4 h-14 a4 4 0 0 1 -4 -4 v-56z"/>
+  </g>
+
+  <!-- Stream Deck stand hanging off rail -->
+  <g>
+    <rect x="140" y="252" width="6" height="70" fill="#1c1c1f"/>
+    <rect x="118" y="318" width="120" height="78" rx="8" fill="#16161a" stroke="#2a2a2e"/>
+    <g fill="#D4571A" fill-opacity="0.55">
+      <rect x="132" y="332" width="22" height="22" rx="3"/>
+      <rect x="162" y="332" width="22" height="22" rx="3"/>
+      <rect x="192" y="332" width="22" height="22" rx="3"/>
+      <rect x="132" y="362" width="22" height="22" rx="3"/>
+      <rect x="162" y="362" width="22" height="22" rx="3"/>
+      <rect x="192" y="362" width="22" height="22" rx="3"/>
+    </g>
+  </g>
+
+  <!-- Mic boom arm -->
+  <g fill="none" stroke="#1c1c1f" stroke-width="10" stroke-linecap="round">
+    <path d="M300 252 v18"/>
+    <path d="M300 270 q0 70 90 70 q60 0 60 50"/>
+  </g>
+  <circle cx="300" cy="252" r="9" fill="#16161a"/>
+  <g transform="translate(450 388)">
+    <rect x="-14" y="-46" width="28" height="70" rx="14" fill="#16161a" stroke="#2a2a2e"/>
+    <g stroke="#D4571A" stroke-opacity="0.6" stroke-width="2.5">
+      <line x1="-7" y1="-32" x2="7" y2="-32"/>
+      <line x1="-7" y1="-22" x2="7" y2="-22"/>
+      <line x1="-7" y1="-12" x2="7" y2="-12"/>
+      <line x1="-7" y1="-2" x2="7" y2="-2"/>
+      <line x1="-7" y1="8" x2="7" y2="8"/>
+    </g>
+  </g>
+
+  <!-- Camera mount arm -->
+  <g fill="none" stroke="#1c1c1f" stroke-width="10" stroke-linecap="round">
+    <path d="M520 252 v18"/>
+    <path d="M520 270 q0 46 60 46"/>
+  </g>
+  <circle cx="520" cy="252" r="9" fill="#16161a"/>
+  <g transform="translate(605 316)">
+    <rect x="-30" y="-18" width="60" height="36" rx="6" fill="#16161a" stroke="#2a2a2e"/>
+    <circle cx="-2" cy="0" r="13" fill="#0c0c0e" stroke="#D4571A" stroke-opacity="0.5" stroke-width="2.5"/>
+    <circle cx="-2" cy="0" r="5" fill="#D4571A" fill-opacity="0.5"/>
+    <rect x="22" y="-9" width="10" height="6" rx="2" fill="#2a2a2e"/>
+  </g>
+
+  <!-- Headphone hook -->
+  <g fill="none" stroke="#1c1c1f" stroke-width="10" stroke-linecap="round">
+    <path d="M660 252 v40"/>
+    <path d="M660 292 q0 26 -22 26"/>
+  </g>
+  <circle cx="660" cy="252" r="9" fill="#16161a"/>
+  <!-- headphones hanging on hook -->
+  <g transform="translate(632 322)" fill="none" stroke="#1c1c1f" stroke-width="9" stroke-linecap="round">
+    <path d="M-34 6 a34 34 0 0 1 68 0"/>
+  </g>
+  <g transform="translate(632 322)">
+    <rect x="-44" y="2" width="20" height="34" rx="9" fill="#16161a" stroke="#2a2a2e"/>
+    <rect x="24" y="2" width="20" height="34" rx="9" fill="#16161a" stroke="#2a2a2e"/>
+    <circle cx="-34" cy="19" r="5" fill="#D4571A" fill-opacity="0.5"/>
+    <circle cx="34" cy="19" r="5" fill="#D4571A" fill-opacity="0.5"/>
+  </g>
+
+  <!-- Cable management clips along rail -->
+  <g fill="#16161a" stroke="#2a2a2e">
+    <rect x="370" y="252" width="34" height="16" rx="4"/>
+    <rect x="412" y="252" width="34" height="16" rx="4"/>
+  </g>
+  <g stroke="#D4571A" stroke-opacity="0.4" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M387 268 q0 26 25 30 q25 4 25 30"/>
+    <path d="M429 268 q0 18 -10 24"/>
+  </g>
+
+  <!-- ember accent line under rail -->
+  <rect x="90" y="256" width="620" height="2" fill="url(#emberBar)" opacity="0.5"/>
+
+  <!-- watermark label -->
+  <text x="400" y="700" text-anchor="middle" fill="#EDE8E2" fill-opacity="0.18" font-family="Space Grotesk, sans-serif" font-size="22" letter-spacing="6">EMBER LINE — COMING SOON</text>
+</svg>
