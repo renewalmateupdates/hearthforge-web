@@ -25,7 +25,7 @@ export default async function ProductDetailPage({ params }: Props) {
   const features = Array.isArray(product.features) ? product.features as { label: string; value: string }[] : []
 
   return (
-    <div className="max-w-6xl mx-auto px-5 py-16">
+    <div className="max-w-6xl mx-auto px-5 pt-28 pb-16 md:pt-36">
       {/* Breadcrumb */}
       <nav className="flex items-center gap-2 text-sm text-hearthstone/40 mb-10">
         <Link href="/" className="hover:text-hearthstone transition-colors">Home</Link>
