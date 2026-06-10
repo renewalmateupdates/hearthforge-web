@@ -124,7 +124,4 @@
 
   <!-- ember accent line under rail -->
   <rect x="90" y="256" width="620" height="2" fill="url(#emberBar)" opacity="0.5"/>
-
-  <!-- watermark label -->
-  <text x="400" y="700" text-anchor="middle" fill="#EDE8E2" fill-opacity="0.18" font-family="Space Grotesk, sans-serif" font-size="22" letter-spacing="6">EMBER LINE — COMING SOON</text>
 </svg>
