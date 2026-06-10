@@ -197,10 +197,10 @@ export default async function HomePage() {
                         : <div className="w-full h-full flex items-center justify-center text-hearthstone/8 text-6xl">⚙</div>
                       }
                     </div>
-                    <div className="p-5">
+                    <div className="p-6">
                       <h3 className="font-semibold text-hearthstone group-hover:text-brand-orange transition-colors text-balance">{p.name}</h3>
-                      {p.short_description && <p className="text-hearthstone/40 text-sm mt-1.5 line-clamp-2">{p.short_description}</p>}
-                      <p className="text-amber font-semibold mt-3 text-sm">
+                      {p.short_description && <p className="text-hearthstone/40 text-sm mt-2 leading-relaxed line-clamp-2">{p.short_description}</p>}
+                      <p className="text-amber font-semibold mt-4 text-sm">
                         {p.price_label || (p.price ? `$${p.price}` : 'Contact for pricing')}
                       </p>
                     </div>
