@@ -26,8 +26,8 @@ export default async function AboutPage() {
   const story = map.get('story')
   const mission = map.get('mission')
 
-  const storyContent = story?.content || 'Hearthforge was born from a shared passion for clean setups and precision craftsmanship. Founded by Butch and Joshua, we build modular 3D-printed accessories designed specifically for creators who want their workspace to work as hard as they do.'
-  const missionContent = mission?.content || 'To give creators the tools to build their perfect workspace — one precision-crafted piece at a time.'
+  const storyContent = story?.content || 'Hearthforge was born from a shared passion for craftsmanship and design. Founded by Butch and Joshua, we design and 3D print precision gear and custom builds for creators, gamers, and anyone who wants their setup — and their ideas — built right.'
+  const missionContent = mission?.content || 'To give creators the tools and custom-built gear to bring their ideas to life — one precision-crafted piece at a time.'
 
   return (
     <div className="min-h-screen">

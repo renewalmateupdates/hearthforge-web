@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: '%s | Hearthforge',
     default: 'Hearthforge — Precision Craft for Creators',
   },
-  description: 'Precision 3D-printed desk accessories built for streamers, gamers, and content creators.',
+  description: 'Precision 3D-printed gear and custom builds for streamers, gamers, and content creators.',
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://hearth-forge.com'),
 }
 

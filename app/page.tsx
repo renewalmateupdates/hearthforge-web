@@ -7,7 +7,7 @@ import type { NavItem, Product, PortfolioItem, Testimonial } from '@/types'
 
 export const metadata = {
   title: 'Hearthforge — Precision Craft for Creators',
-  description: 'Precision 3D-printed desk accessories built for streamers, gamers, and content creators.',
+  description: 'Precision 3D-printed gear and custom builds for streamers, gamers, and content creators.',
 }
 
 const DEFAULT_NAV: NavItem[] = [
@@ -33,7 +33,7 @@ const FEATURES = [
   {
     Icon: Layers,
     title: 'Precision Printed',
-    desc: 'Professional-grade printing on premium PLA and PETG. Parts that fit perfectly, feel solid, and last for years.',
+    desc: 'Professional-grade printing using the right material for the job — premium plastics, resins, and beyond. Parts that fit perfectly, feel solid, and last for years.',
   },
   {
     Icon: Wrench,
@@ -115,7 +115,7 @@ export default async function HomePage() {
 
             {/* Subtitle */}
             <p className="text-lg sm:text-xl text-hearthstone/50 max-w-lg mx-auto mb-10 leading-relaxed">
-              Modular 3D-printed desk accessories built for streamers,
+              Precision 3D-printed gear and custom builds for streamers,
               gamers, and content creators who demand clean setups.
             </p>
 
@@ -132,13 +132,13 @@ export default async function HomePage() {
             {/* Social proof strip — extra top margin for breathing room from buttons */}
             <div className="flex items-center justify-center gap-8 border-t border-white/6 w-full max-w-xs mx-auto" style={{marginTop:'3.5rem',paddingTop:'2.5rem'}}>
               <div className="text-center shrink-0">
-                <p className="text-sm font-semibold text-hearthstone">PLA / PETG</p>
-                <p className="text-xs text-hearthstone/35 mt-0.5">Premium materials</p>
+                <p className="text-sm font-semibold text-hearthstone">Custom Materials</p>
+                <p className="text-xs text-hearthstone/35 mt-0.5">Matched to the build</p>
               </div>
               <div className="w-px h-8 bg-white/10 shrink-0" />
               <div className="text-center shrink-0">
-                <p className="text-sm font-semibold text-hearthstone">Modular</p>
-                <p className="text-xs text-hearthstone/35 mt-0.5">Expandable system</p>
+                <p className="text-sm font-semibold text-hearthstone">Made to Order</p>
+                <p className="text-xs text-hearthstone/35 mt-0.5">Custom requests welcome</p>
               </div>
               <div className="w-px h-8 bg-white/10 shrink-0" />
               <div className="text-center shrink-0">
@@ -274,7 +274,7 @@ export default async function HomePage() {
               Ready to upgrade your setup?
             </h2>
             <p className="text-hearthstone/50 text-lg mb-10 leading-relaxed" style={{maxWidth:'28rem',marginLeft:'auto',marginRight:'auto'}}>
-              Get early access to the Hearthforge modular desk rail system.
+              Get early access to the Ember Line — our modular desk rail system, and a first look at what's next.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/contact" className="hf-btn-primary">
