@@ -4,7 +4,7 @@ import type { Product } from '@/types'
 
 export const metadata = {
   title: 'Products',
-  description: 'Shop our full lineup of precision 3D-printed desk accessories and creator gear.',
+  description: 'Shop our full lineup of precision 3D-printed gear and custom builds for creators.',
 }
 
 export default async function ProductsPage() {
