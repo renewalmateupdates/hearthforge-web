@@ -50,7 +50,7 @@ export default async function ProductDetailPage({ params }: Props) {
           {product.category && (
             <span className="text-xs font-semibold text-brand-orange uppercase tracking-wider mb-3">{product.category}</span>
           )}
-          <h1 className="text-3xl md:text-4xl font-bold text-hearthstone mb-4">{product.name}</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-hearthstone mb-4 text-balance">{product.name}</h1>
 
           <p className="text-2xl font-bold text-amber mb-5">
             {product.price_label || (product.price ? `$${product.price}` : 'Contact for pricing')}
