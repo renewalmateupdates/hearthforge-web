@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { NavItem } from '@/types'
+import NewsletterSignup from './NewsletterSignup'
 
 interface Props {
   footerLinks: NavItem[]
@@ -47,6 +48,12 @@ export default function PublicFooter({ footerLinks, settings }: Props) {
                 ))}
               </div>
             )}
+            <div className="mt-6">
+              <p className="text-xs font-semibold text-hearthstone/25 uppercase tracking-widest mb-2.5">
+                Stay in the loop
+              </p>
+              <NewsletterSignup />
+            </div>
           </div>
 
           {/* Quick Links */}

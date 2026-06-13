@@ -289,6 +289,21 @@ CREATE POLICY "Admins/editors can manage posts" ON blog_posts FOR ALL USING (
 );
 
 -- ============================================================
+-- NEWSLETTER SUBSCRIBERS
+-- ============================================================
+CREATE TABLE IF NOT EXISTS newsletter_subscribers (
+  id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+  email TEXT NOT NULL UNIQUE,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+ALTER TABLE newsletter_subscribers ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Anyone can subscribe" ON newsletter_subscribers FOR INSERT WITH CHECK (true);
+CREATE POLICY "Admins/editors can read subscribers" ON newsletter_subscribers FOR SELECT USING (
+  EXISTS (SELECT 1 FROM profiles WHERE id = auth.uid() AND role IN ('admin', 'editor'))
+);
+
+-- ============================================================
 -- CONTACT FORM SUBMISSIONS
 -- ============================================================
 CREATE TABLE IF NOT EXISTS contact_submissions (
