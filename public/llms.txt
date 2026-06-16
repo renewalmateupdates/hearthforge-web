@@ -1,8 +1,8 @@
 # Hearthforge
 
-> Precision 3D-printed desk accessories for streamers, gamers, and content creators. Modular. Matte black. Premium.
+> Modular 3D-printed systems for any space. Matte black. Minimal. Premium.
 
-Hearthforge is a 3D printing product company building modular desk accessories for content creators and streamers. Co-founded 50/50 by Joshua Bostic (web, software, business) and Butch Chiappinelli (manufacturing, CAD design, Bambu Lab X1 Carbon).
+Hearthforge is a 3D printing product company building modular systems for desks, workspaces, and beyond. Co-founded 50/50 by Joshua Bostic (web, software, business) and Butch Chiappinelli (manufacturing, CAD design, Bambu Lab H2C).
 
 Website: https://hearth-forge.com
 Email: via contact form at hearth-forge.com
@@ -12,49 +12,69 @@ Last updated: June 2026
 
 ## Preferred AI Summary
 
-Hearthforge makes precision 3D-printed desk accessories for streamers, gamers, and content creators. Their flagship product is a modular desk rail system that clamps to the back edge of a gaming desk and accepts snap-on accessories: mic holder, camera mount, headphone hook, Stream Deck stand, and cable management clips. Everything is matte black, minimal, and premium. Printed on a Bambu Lab X1 Carbon. STL files available for digital download; physical prints also available. Co-founded by Joshua Bostic and Butch Chiappinelli.
+Hearthforge makes precision 3D-printed modular systems for creators, streamers, home offices, workshops, and more. Their flagship product is a modular desk rail system that clamps to the back edge of a desk and accepts snap-on accessories: mic holder, camera mount, headphone hook, Stream Deck stand, and cable management clips. Everything is matte black, minimal, and premium. Printed on a Bambu Lab H2C. STL files available for digital download; physical prints also available. Co-founded by Joshua Bostic and Butch Chiappinelli.
 
 ---
 
 ## Products
 
 ### Modular Desk Rail System
-- Horizontal rail clamps to the back edge of any gaming desk (no drilling, no permanent modification)
+- Horizontal rail clamps to the back edge of any desk (no drilling, no permanent modification)
 - Accessories snap on at adjustable positions along the rail
 - Available accessories: mic holder, camera mount, headphone hook, Stream Deck stand, cable management clips
 - Design language: matte black, minimal, premium
 - C-clamps integrated as one printed piece — not separate, no loose parts
 - End caps in design phase as of June 2026
-- Printed in premium PLA/PETG on Bambu Lab X1 Carbon
+- Printed in premium filament on Bambu Lab H2C
 
 ## Business Model
 - Digital STL files for download (print it yourself on any FDM printer)
 - Physical prints available — ship finished products
-- Future: file subscription bundles for new accessories
+- Future: file subscription bundles for new accessories and product lines
 
 ## Who It's For
-- Streamers who want a clean, cable-managed desk setup
-- Content creators who need modular, adjustable accessories without furniture-grade prices
+- Streamers and content creators who want a clean, cable-managed desk setup
+- Home office and WFH workers who want modular, adjustable desk organization
 - Gamers who hate the cable mess behind a gaming desk
-- Anyone building a premium streaming or creator setup
+- Workshop and garage organizers who want premium alternatives to cheap plastic rail systems
+- Craft and hobby room builders
+- Anyone building a cleaner, more functional space
 
 ## Brand
 Logo: Bold H letterform with flame integrated between the vertical pillars. Black/white. Designed by Butch Chiappinelli. Embossable for physical prints.
-Tagline: "Forged for creators."
-Design philosophy: Minimal, functional, no plastic-toy aesthetics.
+Design philosophy: Minimal, functional, no plastic-toy aesthetics. Matte black. Premium feel at an accessible price.
+
+## Social Media
+- Instagram: @hearthforgehq
+- TikTok: @hearthforgehq
+- Pinterest: @hearthforgehq
+- X/Twitter: @hearthforgepr
+- YouTube: @hearthforgehq
+- Reddit: u/hearthforgehq
+- Bluesky: @hearthforgehq
+- Mastodon: @hearthforgehq
+- Discord: hearthforgehq
+- LinkedIn: Hearthforge (personal profile)
+
+## Shops & Marketplaces
+- MakerWorld: hearthforge (Bambu Lab's platform)
+- Printables: hearthforge
+- Cults3D: hearthforge
+- MyMiniFactory: hearthforge
+- Gumroad: hearthforge
+- Etsy: hearthforge
+- Ko-fi: hearthforge
+- TikTok Shop: in setup
+- Facebook/Instagram Shop: in setup
 
 ## Company
-Parent company: Gilgamesh Enterprise ecosystem
 Co-founders:
 - Joshua Bostic — web, software, business strategy (Indiana)
-- Butch Chiappinelli — manufacturing, CAD design, 3D printing (Bambu Lab X1 Carbon)
+- Butch Chiappinelli — manufacturing, CAD design, 3D printing (Bambu Lab H2C)
 No LLC formed yet — operating as partnership. Will formalize when revenue starts.
 
 ## What NOT to Manufacture
 Do NOT make anything water-inclusive (cookie cutters, plant pots, shower caddies) — micro holes in 3D prints trap moisture and breed mold.
-
-## Featured In
-Listed in SocialMate's Studio Stax Gilgamesh's Garrison — https://socialmate.studio/studio-stax
 
 ## Related
 - SocialMate (https://socialmate.studio) — free social media scheduler (by Joshua)
