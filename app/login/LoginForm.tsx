@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
-import { Flame } from 'lucide-react'
 
 export default function LoginForm() {
   const router = useRouter()
@@ -38,9 +37,11 @@ export default function LoginForm() {
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 mb-4">
-            <Flame className="w-8 h-8 text-amber" />
+            <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-hearthstone p-1 shrink-0">
+              <img src="/logo.png" alt="Raid Ready Labs" className="max-w-full max-h-full object-contain" />
+            </span>
             <span className="text-2xl font-bold text-hearthstone tracking-tight">
-              HEARTH<span className="text-brand-orange">FORGE</span>
+              RAID READY <span className="text-brand-orange">LABS</span>
             </span>
           </div>
           <p className="text-hearthstone/50 text-sm">Admin Dashboard</p>
