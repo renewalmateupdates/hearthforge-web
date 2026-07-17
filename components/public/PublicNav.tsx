@@ -21,9 +21,11 @@ export default function PublicNav({ items }: Props) {
 
         {/* Left — Logo */}
         <Link href="/" className="flex items-center gap-2.5 justify-self-start">
-          <img src="/logo.png" alt="Raid Ready Labs" className="w-8 h-8 object-contain invert" />
-          <span className="font-bold text-sm tracking-widest text-hearthstone hidden sm:block">
-            HEARTH<span className="text-brand-orange">FORGE</span>
+          <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-hearthstone p-1 shrink-0">
+            <img src="/logo.png" alt="Raid Ready Labs" className="max-w-full max-h-full object-contain" />
+          </span>
+          <span className="font-bold text-sm tracking-wide text-hearthstone hidden sm:block">
+            RAID READY <span className="text-brand-orange">LABS</span>
           </span>
         </Link>
 
