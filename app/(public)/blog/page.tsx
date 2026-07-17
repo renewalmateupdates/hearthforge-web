@@ -5,7 +5,7 @@ import type { BlogPost } from '@/types'
 
 export const metadata = {
   title: 'Blog',
-  description: 'Build updates, setup tips, and stories from the Hearthforge workshop.',
+  description: 'Build updates, setup tips, and stories from the Raid Ready Labs workshop.',
 }
 
 export default async function BlogPage() {

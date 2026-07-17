@@ -1,7 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import SEOManager from './SEOManager'
 
-export const metadata = { title: 'SEO | Hearthforge Admin' }
+export const metadata = { title: 'SEO | Raid Ready Labs Admin' }
 
 const DEFAULT_PAGES = ['/', '/products', '/portfolio', '/about', '/contact', '/blog', '/faq']
 

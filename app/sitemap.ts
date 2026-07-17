@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 
-const BASE_URL = 'https://hearth-forge.com'
+const BASE_URL = 'https://raidreadylabs.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString()

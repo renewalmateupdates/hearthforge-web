@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Terms of Service',
-  description: 'The terms and conditions for using the Hearthforge website and ordering our products.',
+  description: 'The terms and conditions for using the Raid Ready Labs website and ordering our products.',
 }
 
 export default function TermsPage() {
@@ -21,7 +21,7 @@ export default function TermsPage() {
           <div>
             <h2 className="text-xl font-bold text-hearthstone mb-3">Overview</h2>
             <p>
-              Hearthforge designs and produces precision 3D-printed gear and custom builds for streamers,
+              Raid Ready Labs designs and produces precision 3D-printed gear and custom builds for streamers,
               gamers, and content creators. By using this website or placing an order, you agree to the
               terms below.
             </p>
@@ -47,7 +47,7 @@ export default function TermsPage() {
           <div>
             <h2 className="text-xl font-bold text-hearthstone mb-3">Intellectual Property</h2>
             <p>
-              All designs, product photography, and content on this site are the property of Hearthforge and
+              All designs, product photography, and content on this site are the property of Raid Ready Labs and
               may not be reproduced or used without permission.
             </p>
           </div>
@@ -55,7 +55,7 @@ export default function TermsPage() {
           <div>
             <h2 className="text-xl font-bold text-hearthstone mb-3">Limitation of Liability</h2>
             <p>
-              Hearthforge products are provided as-is. We are not liable for any indirect, incidental, or
+              Raid Ready Labs products are provided as-is. We are not liable for any indirect, incidental, or
               consequential damages arising from the use of our products or website.
             </p>
           </div>
@@ -64,8 +64,8 @@ export default function TermsPage() {
             <h2 className="text-xl font-bold text-hearthstone mb-3">Contact Us</h2>
             <p>
               Questions about these terms? Reach out to us at{' '}
-              <a href="mailto:hearthforge.hq@gmail.com" className="text-brand-orange hover:text-amber transition-colors">
-                hearthforge.hq@gmail.com
+              <a href="mailto:team@raidreadylabs.com" className="text-brand-orange hover:text-amber transition-colors">
+                team@raidreadylabs.com
               </a>.
             </p>
           </div>

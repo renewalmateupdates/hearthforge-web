@@ -8,7 +8,7 @@ interface Props {
 }
 
 export default function PublicFooter({ footerLinks, settings }: Props) {
-  const footerText = settings.footer_text || '© 2026 Hearthforge. All rights reserved.'
+  const footerText = settings.footer_text || '© 2026 Raid Ready Labs. All rights reserved.'
 
   const socialLinks = [
     { key: 'instagram_url', label: 'Instagram' },
@@ -25,7 +25,7 @@ export default function PublicFooter({ footerLinks, settings }: Props) {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-flex items-center gap-2.5 mb-4">
-              <img src="/logo.png" alt="Hearthforge" className="w-8 h-8 object-contain invert" />
+              <img src="/logo.png" alt="Raid Ready Labs" className="w-8 h-8 object-contain invert" />
               <span className="font-bold text-sm tracking-widest text-hearthstone">
                 HEARTH<span className="text-brand-orange">FORGE</span>
               </span>
@@ -95,10 +95,10 @@ export default function PublicFooter({ footerLinks, settings }: Props) {
               </a>
             ) : (
               <a
-                href="mailto:hearthforge.hq@gmail.com"
+                href="mailto:team@raidreadylabs.com"
                 className="block text-sm text-hearthstone/45 hover:text-hearthstone transition-colors mb-2"
               >
-                hearthforge.hq@gmail.com
+                team@raidreadylabs.com
               </a>
             )}
             <Link

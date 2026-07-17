@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Privacy Policy',
-  description: 'How Hearthforge collects, uses, and protects your information.',
+  description: 'How Raid Ready Labs collects, uses, and protects your information.',
 }
 
 export default function PrivacyPage() {
@@ -59,8 +59,8 @@ export default function PrivacyPage() {
             <p>
               If you have questions about this privacy policy or how your information is handled, reach out
               to us at{' '}
-              <a href="mailto:hearthforge.hq@gmail.com" className="text-brand-orange hover:text-amber transition-colors">
-                hearthforge.hq@gmail.com
+              <a href="mailto:team@raidreadylabs.com" className="text-brand-orange hover:text-amber transition-colors">
+                team@raidreadylabs.com
               </a>.
             </p>
           </div>

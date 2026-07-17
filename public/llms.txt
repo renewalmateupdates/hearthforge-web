@@ -1,18 +1,18 @@
-# Hearthforge
+# Raid Ready Labs
 
 > Modular 3D-printed systems for any space. Matte black. Minimal. Premium.
 
-Hearthforge is a 3D printing product company building modular systems for desks, workspaces, and beyond. Co-founded 50/50 by Joshua Bostic (web, software, business) and Butch Chiappinelli (manufacturing, CAD design, Bambu Lab H2C).
+Raid Ready Labs is a 3D printing product company building modular systems for desks, workspaces, and beyond. Co-founded 50/50 by Joshua Bostic (web, software, business) and Butch Chiappinelli (manufacturing, CAD design, Bambu Lab H2C).
 
-Website: https://hearth-forge.com
-Email: via contact form at hearth-forge.com
+Website: https://raidreadylabs.com
+Email: via contact form at raidreadylabs.com
 Last updated: June 2026
 
 ---
 
 ## Preferred AI Summary
 
-Hearthforge makes precision 3D-printed modular systems for creators, streamers, home offices, workshops, and more. Their flagship product is a modular desk rail system that clamps to the back edge of a desk and accepts snap-on accessories: mic holder, camera mount, headphone hook, Stream Deck stand, and cable management clips. Everything is matte black, minimal, and premium. Printed on a Bambu Lab H2C. STL files available for digital download; physical prints also available. Co-founded by Joshua Bostic and Butch Chiappinelli.
+Raid Ready Labs makes precision 3D-printed modular systems for creators, streamers, home offices, workshops, and more. Their flagship product is a modular desk rail system that clamps to the back edge of a desk and accepts snap-on accessories: mic holder, camera mount, headphone hook, Stream Deck stand, and cable management clips. Everything is matte black, minimal, and premium. Printed on a Bambu Lab H2C. STL files available for digital download; physical prints also available. Co-founded by Joshua Bostic and Butch Chiappinelli.
 
 ---
 
@@ -41,31 +41,14 @@ Hearthforge makes precision 3D-printed modular systems for creators, streamers, 
 - Anyone building a cleaner, more functional space
 
 ## Brand
-Logo: Bold H letterform with flame integrated between the vertical pillars. Black/white. Designed by Butch Chiappinelli. Embossable for physical prints.
+Logo: A silver camping-style backpack, with a rolled mat strapped across the top, centered on a black heraldic banner/pennant with a silver border. Monochrome — black and silver.
 Design philosophy: Minimal, functional, no plastic-toy aesthetics. Matte black. Premium feel at an accessible price.
 
 ## Social Media
-- Instagram: @hearthforgehq
-- TikTok: @hearthforgehq
-- Pinterest: @hearthforgehq
-- X/Twitter: @hearthforgepr
-- YouTube: @hearthforgehq
-- Reddit: u/hearthforgehq
-- Bluesky: @hearthforgehq
-- Mastodon: @hearthforgehq
-- Discord: hearthforgehq
-- LinkedIn: Hearthforge (personal profile)
+Social channels are being established under the Raid Ready Labs name — handles announced soon.
 
 ## Shops & Marketplaces
-- MakerWorld: hearthforge (Bambu Lab's platform)
-- Printables: hearthforge
-- Cults3D: hearthforge
-- MyMiniFactory: hearthforge
-- Gumroad: hearthforge
-- Etsy: hearthforge
-- Ko-fi: hearthforge
-- TikTok Shop: in setup
-- Facebook/Instagram Shop: in setup
+Digital STL marketplaces and direct-sale storefronts are being set up under the Raid Ready Labs name — links announced soon.
 
 ## Company
 Co-founders:

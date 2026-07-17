@@ -3,7 +3,7 @@ import { createClient } from '@/lib/supabase/server'
 
 export const metadata = {
   title: 'Contact',
-  description: 'Get in touch with Hearthforge — custom orders, questions, and inquiries.',
+  description: 'Get in touch with Raid Ready Labs — custom orders, questions, and inquiries.',
 }
 
 export default async function ContactPage() {

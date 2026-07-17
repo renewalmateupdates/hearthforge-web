@@ -1,5 +1,5 @@
 -- ============================================================
--- HEARTHFORGE DATABASE SCHEMA
+-- RAID READY LABS DATABASE SCHEMA
 -- Run this entire file in your Supabase SQL Editor
 -- ============================================================
 
@@ -355,9 +355,9 @@ CREATE POLICY "Admins/editors can manage seo" ON seo_settings FOR ALL USING (
 
 -- Default site settings
 INSERT INTO site_settings (key, value) VALUES
-  ('business_name', 'Hearthforge'),
+  ('business_name', 'Raid Ready Labs'),
   ('tagline', 'Precision Craft. Forged for Creators.'),
-  ('contact_email', 'hearthforge.hq@gmail.com'),
+  ('contact_email', 'team@raidreadylabs.com'),
   ('contact_phone', ''),
   ('address', ''),
   ('facebook_url', ''),
@@ -365,7 +365,7 @@ INSERT INTO site_settings (key, value) VALUES
   ('twitter_url', ''),
   ('tiktok_url', ''),
   ('youtube_url', ''),
-  ('footer_text', '© 2026 Hearthforge. All rights reserved.'),
+  ('footer_text', '© 2026 Raid Ready Labs. All rights reserved.'),
   ('google_analytics_id', '')
 ON CONFLICT (key) DO NOTHING;
 
@@ -389,14 +389,14 @@ ON CONFLICT (slug) DO NOTHING;
 -- Default homepage sections
 INSERT INTO homepage_sections (section_key, title, subtitle, content, button_text, button_url, button_secondary_text, button_secondary_url, enabled, sort_order) VALUES
   ('hero', 'Forged for Creators', 'Precision 3D-printed desk accessories built for streamers, gamers, and content creators.', '', 'Shop Products', '/products', 'View Portfolio', '/portfolio', true, 0),
-  ('features', 'Why Hearthforge?', 'Every piece is designed with purpose and printed with precision.', '', '', '', '', '', true, 1),
+  ('features', 'Why Raid Ready Labs?', 'Every piece is designed with purpose and printed with precision.', '', '', '', '', '', true, 1),
   ('featured_products', 'Our Products', 'Modular, minimal, and built to last.', '', 'See All Products', '/products', '', '', true, 2),
   ('cta', 'Ready to upgrade your setup?', 'Get early access to our modular desk rail system.', '', 'Get Early Access', '/contact', '', '', true, 3)
 ON CONFLICT (section_key) DO NOTHING;
 
 -- Default about sections
 INSERT INTO about_sections (section_key, title, content) VALUES
-  ('story', 'Our Story', 'Hearthforge was born from a shared passion for clean setups and precision craftsmanship. Founded by Butch and Joshua, we build modular 3D-printed accessories designed specifically for creators.'),
+  ('story', 'Our Story', 'Raid Ready Labs was born from a shared passion for clean setups and precision craftsmanship. Founded by Butch and Joshua, we build modular 3D-printed accessories designed specifically for creators.'),
   ('mission', 'Our Mission', 'To give creators the tools to build their perfect workspace — one precision-crafted piece at a time.'),
   ('team', 'The Team', '')
 ON CONFLICT (section_key) DO NOTHING;

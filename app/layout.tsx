@@ -11,11 +11,11 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Hearthforge',
-    default: 'Hearthforge — Precision Craft for Creators',
+    template: '%s | Raid Ready Labs',
+    default: 'Raid Ready Labs — Precision Craft for Creators',
   },
   description: 'Precision 3D-printed gear and custom builds for streamers, gamers, and content creators.',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://hearth-forge.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://raidreadylabs.com'),
 }
 
 export default function RootLayout({

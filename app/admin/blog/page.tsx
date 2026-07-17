@@ -2,7 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import Link from 'next/link'
 import BlogTable from './BlogTable'
 
-export const metadata = { title: 'Blog | Hearthforge Admin' }
+export const metadata = { title: 'Blog | Raid Ready Labs Admin' }
 
 export default async function BlogPage() {
   const supabase = await createClient()

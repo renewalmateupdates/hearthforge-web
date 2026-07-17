@@ -1,7 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import MediaLibrary from './MediaLibrary'
 
-export const metadata = { title: 'Media Library | Hearthforge Admin' }
+export const metadata = { title: 'Media Library | Raid Ready Labs Admin' }
 
 export default async function MediaPage() {
   const supabase = await createClient()

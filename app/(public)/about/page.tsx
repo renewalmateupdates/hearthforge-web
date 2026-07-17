@@ -4,7 +4,7 @@ import { Target, Gauge, ShieldCheck } from 'lucide-react'
 
 export const metadata = {
   title: 'About',
-  description: 'Learn the story behind Hearthforge — built by creators, for creators.',
+  description: 'Learn the story behind Raid Ready Labs — built by creators, for creators.',
 }
 
 const VALUES = [
@@ -26,7 +26,7 @@ export default async function AboutPage() {
   const story = map.get('story')
   const mission = map.get('mission')
 
-  const storyContent = story?.content || 'Hearthforge was born from a shared passion for craftsmanship and design. Founded by Butch and Joshua, we design and 3D print precision gear and custom builds for creators, gamers, and anyone who wants their setup — and their ideas — built right.'
+  const storyContent = story?.content || 'Raid Ready Labs was born from a shared passion for craftsmanship and design. Founded by Butch and Joshua, we design and 3D print precision gear and custom builds for creators, gamers, and anyone who wants their setup — and their ideas — built right.'
   const missionContent = mission?.content || 'To give creators the tools and custom-built gear to bring their ideas to life — one precision-crafted piece at a time.'
 
   return (

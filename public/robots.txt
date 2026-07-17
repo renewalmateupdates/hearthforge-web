@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hearth-forge.com/sitemap.xml
+Sitemap: https://raidreadylabs.com/sitemap.xml

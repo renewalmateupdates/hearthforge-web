@@ -3,7 +3,7 @@ import { createClient as createAdminClient } from '@supabase/supabase-js'
 import { redirect } from 'next/navigation'
 import UsersManager from './UsersManager'
 
-export const metadata = { title: 'Users | Hearthforge Admin' }
+export const metadata = { title: 'Users | Raid Ready Labs Admin' }
 
 const OWNER_EMAILS = ['hearthforge.hq@gmail.com', 'butchjchiappinelli@gmail.com']
 

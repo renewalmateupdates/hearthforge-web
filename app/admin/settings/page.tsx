@@ -1,7 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import SettingsForm from './SettingsForm'
 
-export const metadata = { title: 'Site Settings | Hearthforge Admin' }
+export const metadata = { title: 'Site Settings | Raid Ready Labs Admin' }
 
 export default async function SettingsPage() {
   const supabase = await createClient()

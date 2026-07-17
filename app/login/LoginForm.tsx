@@ -83,7 +83,7 @@ export default function LoginForm() {
         </form>
 
         <p className="text-center text-hearthstone/30 text-xs mt-6">
-          Hearthforge Admin — Authorized Access Only
+          Raid Ready Labs Admin — Authorized Access Only
         </p>
       </div>
     </div>
