@@ -25,9 +25,11 @@ export default function PublicFooter({ footerLinks, settings }: Props) {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-flex items-center gap-2.5 mb-4">
-              <img src="/logo.png" alt="Raid Ready Labs" className="w-8 h-8 object-contain invert" />
-              <span className="font-bold text-sm tracking-widest text-hearthstone">
-                HEARTH<span className="text-brand-orange">FORGE</span>
+              <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-hearthstone p-1 shrink-0">
+                <img src="/logo.png" alt="Raid Ready Labs" className="max-w-full max-h-full object-contain" />
+              </span>
+              <span className="font-bold text-sm tracking-wide text-hearthstone">
+                RAID READY <span className="text-brand-orange">LABS</span>
               </span>
             </Link>
             <p className="text-hearthstone/40 text-sm leading-relaxed max-w-xs">
