@@ -4,7 +4,7 @@ import type { FAQ } from '@/types'
 
 export const metadata = {
   title: 'FAQ',
-  description: 'Frequently asked questions about Hearthforge products, shipping, and ordering.',
+  description: 'Frequently asked questions about Raid Ready Labs products, shipping, and ordering.',
 }
 
 export default async function FAQPage() {

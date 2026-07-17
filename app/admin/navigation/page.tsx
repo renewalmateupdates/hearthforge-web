@@ -1,7 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import NavigationEditor from './NavigationEditor'
 
-export const metadata = { title: 'Navigation | Hearthforge Admin' }
+export const metadata = { title: 'Navigation | Raid Ready Labs Admin' }
 
 export default async function NavigationPage() {
   const supabase = await createClient()

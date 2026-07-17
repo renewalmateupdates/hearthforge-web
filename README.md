@@ -1,8 +1,8 @@
-# Hearthforge Web
+# Raid Ready Labs Web
 
 Premium 3D printing brand website with full CMS admin dashboard.
 
-**Live site:** https://hearth-forge.com  
+**Live site:** https://raidreadylabs.com  
 **Stack:** Next.js 15 · TypeScript · Tailwind CSS · Supabase · Vercel
 
 ---
@@ -50,7 +50,7 @@ Premium 3D printing brand website with full CMS admin dashboard.
 NEXT_PUBLIC_SUPABASE_URL=your_project_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
 SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
-NEXT_PUBLIC_SITE_URL=https://hearth-forge.com
+NEXT_PUBLIC_SITE_URL=https://raidreadylabs.com
 ADMIN_EMAIL=hearthforge.hq@gmail.com
 ```
 

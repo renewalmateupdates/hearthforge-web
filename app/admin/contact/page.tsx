@@ -1,7 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import ContactManager from './ContactManager'
 
-export const metadata = { title: 'Contact Submissions | Hearthforge Admin' }
+export const metadata = { title: 'Contact Submissions | Raid Ready Labs Admin' }
 
 export default async function ContactPage() {
   const supabase = await createClient()

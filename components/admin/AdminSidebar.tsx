@@ -38,7 +38,7 @@ export default function AdminSidebar({ profile }: { profile: Profile }) {
       {/* Logo */}
       <div className="px-5 py-4 border-b border-white/8">
         <Link href="/admin" className="flex items-center gap-2">
-          <img src="/logo.png" alt="Hearthforge" className="w-6 h-6 object-contain invert shrink-0" />
+          <img src="/logo.png" alt="Raid Ready Labs" className="w-6 h-6 object-contain invert shrink-0" />
           <span className="font-bold text-sm tracking-wide text-hearthstone">
             HEARTH<span className="text-brand-orange">FORGE</span>
           </span>

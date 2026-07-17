@@ -1,7 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import BlogPostForm from '../BlogPostForm'
 
-export const metadata = { title: 'New Post | Hearthforge Admin' }
+export const metadata = { title: 'New Post | Raid Ready Labs Admin' }
 
 export default async function NewBlogPostPage() {
   const supabase = await createClient()

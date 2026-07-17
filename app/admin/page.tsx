@@ -2,7 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import { Package, Image, MessageSquare, Mail, FileText, Users } from 'lucide-react'
 import Link from 'next/link'
 
-export const metadata = { title: 'Dashboard | Hearthforge Admin' }
+export const metadata = { title: 'Dashboard | Raid Ready Labs Admin' }
 
 async function getStats(supabase: Awaited<ReturnType<typeof createClient>>) {
   const [products, portfolio, testimonials, contacts, posts, faqs] = await Promise.all([

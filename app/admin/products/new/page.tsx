@@ -1,6 +1,6 @@
 import ProductForm from '../ProductForm'
 
-export const metadata = { title: 'New Product | Hearthforge Admin' }
+export const metadata = { title: 'New Product | Raid Ready Labs Admin' }
 
 export default function NewProductPage() {
   return (

@@ -2,7 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import { notFound } from 'next/navigation'
 import ProductForm from '../ProductForm'
 
-export const metadata = { title: 'Edit Product | Hearthforge Admin' }
+export const metadata = { title: 'Edit Product | Raid Ready Labs Admin' }
 
 export default async function EditProductPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params

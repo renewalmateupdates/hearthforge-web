@@ -6,7 +6,7 @@ import PublicFooter from '@/components/public/PublicFooter'
 import type { NavItem, Product, PortfolioItem, Testimonial } from '@/types'
 
 export const metadata = {
-  title: 'Hearthforge — Precision Craft for Creators',
+  title: 'Raid Ready Labs — Precision Craft for Creators',
   description: 'Precision 3D-printed gear and custom builds for streamers, gamers, and content creators.',
 }
 
@@ -38,7 +38,7 @@ const FEATURES = [
   {
     Icon: Wrench,
     title: 'Modular by Design',
-    desc: 'Snap together, reconfigure, and expand. Every piece works with every other piece in the Hearthforge system.',
+    desc: 'Snap together, reconfigure, and expand. Every piece works with every other piece in the Raid Ready Labs system.',
   },
 ]
 
@@ -153,7 +153,7 @@ export default async function HomePage() {
         <section className="py-24 border-t border-white/5">
           <div className="hf-section">
             <div className="hf-section-header">
-              <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-3">Why Hearthforge</p>
+              <p className="text-xs font-semibold text-brand-orange/70 uppercase tracking-widest mb-3">Why Raid Ready Labs</p>
               <h2 className="text-3xl font-bold text-hearthstone mb-4">Built different. On purpose.</h2>
               <p className="text-hearthstone/45 text-lg leading-relaxed">
                 Every piece is designed with purpose and printed with precision.

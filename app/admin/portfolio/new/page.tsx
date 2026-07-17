@@ -1,6 +1,6 @@
 import PortfolioForm from '../PortfolioForm'
 
-export const metadata = { title: 'New Portfolio Item | Hearthforge Admin' }
+export const metadata = { title: 'New Portfolio Item | Raid Ready Labs Admin' }
 
 export default function NewPortfolioPage() {
   return (

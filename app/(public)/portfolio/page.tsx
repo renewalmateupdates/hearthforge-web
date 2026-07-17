@@ -4,7 +4,7 @@ import type { PortfolioItem } from '@/types'
 
 export const metadata = {
   title: 'Portfolio',
-  description: 'Browse our work — builds, setups, and custom projects from the Hearthforge workshop.',
+  description: 'Browse our work — builds, setups, and custom projects from the Raid Ready Labs workshop.',
 }
 
 export default async function PortfolioPage() {

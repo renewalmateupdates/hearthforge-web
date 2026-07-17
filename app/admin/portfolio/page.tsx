@@ -2,7 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import Link from 'next/link'
 import PortfolioGrid from './PortfolioGrid'
 
-export const metadata = { title: 'Portfolio | Hearthforge Admin' }
+export const metadata = { title: 'Portfolio | Raid Ready Labs Admin' }
 
 export default async function PortfolioPage() {
   const supabase = await createClient()

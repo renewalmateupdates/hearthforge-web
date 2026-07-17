@@ -2,7 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import { notFound } from 'next/navigation'
 import PortfolioForm from '../PortfolioForm'
 
-export const metadata = { title: 'Edit Portfolio Item | Hearthforge Admin' }
+export const metadata = { title: 'Edit Portfolio Item | Raid Ready Labs Admin' }
 
 export default async function EditPortfolioPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params

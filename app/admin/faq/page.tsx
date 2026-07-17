@@ -1,7 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import FAQManager from './FAQManager'
 
-export const metadata = { title: 'FAQ | Hearthforge Admin' }
+export const metadata = { title: 'FAQ | Raid Ready Labs Admin' }
 
 export default async function FAQPage() {
   const supabase = await createClient()

@@ -2,7 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import { notFound } from 'next/navigation'
 import BlogPostForm from '../BlogPostForm'
 
-export const metadata = { title: 'Edit Post | Hearthforge Admin' }
+export const metadata = { title: 'Edit Post | Raid Ready Labs Admin' }
 
 export default async function EditBlogPostPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params

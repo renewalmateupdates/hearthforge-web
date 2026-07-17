@@ -1,7 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import AboutEditor from './AboutEditor'
 
-export const metadata = { title: 'About Page | Hearthforge Admin' }
+export const metadata = { title: 'About Page | Raid Ready Labs Admin' }
 
 export default async function AboutPage() {
   const supabase = await createClient()
